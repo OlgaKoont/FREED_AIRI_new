@@ -1,0 +1,60 @@
+REMARK  Name = ligand_4djh_chain_A.pdb
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1A_2  and  C3_9
+REMARK    2  A    between atoms: C1C_3  and  C41_32
+REMARK    3  A    between atoms: C2A_5  and  N2A_8
+REMARK    4  A    between atoms: C2A_5  and  C3A_10
+REMARK    5  A    between atoms: C2A_5  and  C4D_18
+REMARK    6  A    between atoms: C4D_18  and  N11_28
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C2A JDC A1300       2.445 -25.585  56.711  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH   1   4
+ATOM      2  C1A JDC A1300       2.111 -23.598  58.190  0.00  0.00    +0.000 C 
+ATOM      3  O1  JDC A1300       1.727 -24.318  59.120  0.00  0.00    +0.000 OA
+ATOM      4  N2A JDC A1300       2.503 -24.178  56.921  0.00  0.00    +0.000 NA
+BRANCH   2   7
+ATOM      5  C1  JDC A1300       3.212 -20.410  59.668  0.00  0.00    +0.000 C 
+ATOM      6  N2  JDC A1300       2.925 -21.788  59.558  0.00  0.00    +0.000 NA
+ATOM      7  C3  JDC A1300       2.200 -22.081  58.366  0.00  0.00    +0.000 C 
+ATOM      8  C4  JDC A1300       0.834 -21.417  58.395  0.00  0.00    +0.000 C 
+ATOM      9  C4A JDC A1300       0.941 -19.983  58.845  0.00  0.00    +0.000 A 
+ATOM     10  C5  JDC A1300      -0.162 -19.056  58.639  0.00  0.00    +0.000 A 
+ATOM     11  C6  JDC A1300      -0.050 -17.705  59.061  0.00  0.00    +0.000 A 
+ATOM     12  C7  JDC A1300       1.111 -17.258  59.670  0.00  0.00    +0.000 A 
+ATOM     13  O7  JDC A1300       1.231 -15.978  60.074  0.00  0.00    +0.000 OA
+ATOM     14  C8  JDC A1300       2.166 -18.147  59.863  0.00  0.00    +0.000 A 
+ATOM     15  C8A JDC A1300       2.050 -19.540  59.431  0.00  0.00    +0.000 A 
+ENDBRANCH   2   7
+ENDBRANCH   1   4
+BRANCH   1  16
+ATOM     16  C3A JDC A1300       1.614 -25.743  55.429  0.00  0.00    +0.000 C 
+ATOM     17  C3B JDC A1300       1.576 -27.107  54.864  0.00  0.00    +0.000 C 
+ATOM     18  C3D JDC A1300       0.193 -25.053  55.545  0.00  0.00    +0.000 C 
+ENDBRANCH   1  16
+BRANCH   1  19
+ATOM     19  C4D JDC A1300       3.811 -26.223  56.565  0.00  0.00    +0.000 C 
+BRANCH  19  21
+ATOM     20  C4E JDC A1300       6.423 -28.478  59.844  0.00  0.00    +0.000 C 
+ATOM     21  N11 JDC A1300       4.678 -26.293  57.835  0.00  0.00    +0.000 NA
+ATOM     22  C21 JDC A1300       4.043 -27.036  58.903  0.00  0.00    +0.000 C 
+ATOM     23  C31 JDC A1300       4.679 -26.846  60.229  0.00  0.00    +0.000 C 
+ATOM     24  C34 JDC A1300       4.312 -25.401  60.739  0.00  0.00    +0.000 C 
+ATOM     25  C41 JDC A1300       6.129 -27.032  60.202  0.00  0.00    +0.000 C 
+ATOM     26  C51 JDC A1300       6.752 -26.272  59.152  0.00  0.00    +0.000 C 
+ATOM     27  C61 JDC A1300       6.115 -26.461  57.818  0.00  0.00    +0.000 C 
+BRANCH  25  28
+ATOM     28  C1C JDC A1300       6.721 -26.803  61.593  0.00  0.00    +0.000 A 
+ATOM     29  C2C JDC A1300       6.111 -27.382  62.709  0.00  0.00    +0.000 A 
+ATOM     30  C3C JDC A1300       6.658 -27.175  63.992  0.00  0.00    +0.000 A 
+ATOM     31  O3C JDC A1300       6.021 -27.774  65.151  0.00  0.00    +0.000 OA
+ATOM     32  C4C JDC A1300       7.839 -26.372  64.148  0.00  0.00    +0.000 A 
+ATOM     33  C5C JDC A1300       8.441 -25.801  63.038  0.00  0.00    +0.000 A 
+ATOM     34  C6C JDC A1300       7.899 -26.005  61.754  0.00  0.00    +0.000 A 
+ENDBRANCH  25  28
+ENDBRANCH  19  21
+ENDBRANCH   1  19
+TORSDOF 6
