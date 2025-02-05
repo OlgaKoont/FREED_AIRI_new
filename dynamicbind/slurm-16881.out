@@ -1,0 +1,1600 @@
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings4033123108/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 4.950719833374023, std 0.0, max 4.950719833374023
+distance protein-mol: mean 3.4695997186418026e-08, std 0.0, max 3.4695997186418026e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings230166228/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.967003345489502, std 0.0, max 7.967003345489502
+distance protein-mol: mean 2.4710780976988644e-08, std 0.0, max 2.4710780976988644e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1707712563/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.949803829193115, std 0.0, max 6.949803829193115
+distance protein-mol: mean 2.4232734929796607e-08, std 0.0, max 2.4232734929796607e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+result_folder/main_db_42_05_rew_out/index0_idx_0/ref_proteinFile.pdb 0 14 -9118.075401787548
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings4290766242/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 5.91767692565918, std 0.0, max 5.91767692565918
+distance protein-mol: mean 3.29477067850803e-08, std 0.0, max 3.29477067850803e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1068514671/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 9.323254585266113, std 0.0, max 9.323254585266113
+distance protein-mol: mean 2.808642740603773e-08, std 0.0, max 2.808642740603773e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1671692543/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.293127536773682, std 0.0, max 7.293127536773682
+distance protein-mol: mean 1.795126394199542e-07, std 0.0, max 1.795126394199542e-07
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1792557175/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 5.65372896194458, std 0.0, max 5.65372896194458
+distance protein-mol: mean 5.909543432380815e-08, std 0.0, max 5.909543432380815e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings4138929162/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.823718547821045, std 0.0, max 6.823718547821045
+distance protein-mol: mean 5.2683560625155224e-08, std 0.0, max 5.2683560625155224e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings48874206/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 9.80395221710205, std 0.0, max 9.80395221710205
+distance protein-mol: mean 1.2219861389439757e-07, std 0.0, max 1.2219861389439757e-07
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings343899649/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 5.3418073654174805, std 0.0, max 5.3418073654174805
+distance protein-mol: mean 4.2088430518560926e-08, std 0.0, max 4.2088430518560926e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings953093213/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.512434005737305, std 0.0, max 7.512434005737305
+distance protein-mol: mean 9.542824130903682e-08, std 0.0, max 9.542824130903682e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1076532768/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.02471399307251, std 0.0, max 7.02471399307251
+distance protein-mol: mean 5.0434699971901864e-08, std 0.0, max 5.0434699971901864e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings3985638579/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.3272223472595215, std 0.0, max 7.3272223472595215
+distance protein-mol: mean 6.718181566611747e-08, std 0.0, max 6.718181566611747e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings799853067/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.736514568328857, std 0.0, max 6.736514568328857
+distance protein-mol: mean 2.6803279595810636e-08, std 0.0, max 2.6803279595810636e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings2894791258/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.30743408203125, std 0.0, max 6.30743408203125
+distance protein-mol: mean 5.9537029528655694e-08, std 0.0, max 5.9537029528655694e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings411983474/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.225635528564453, std 0.0, max 7.225635528564453
+distance protein-mol: mean 5.9238143279571887e-08, std 0.0, max 5.9238143279571887e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings4196489227/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 5.790319442749023, std 0.0, max 5.790319442749023
+distance protein-mol: mean 2.9511966204154305e-08, std 0.0, max 2.9511966204154305e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings3660473097/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 5.379648208618164, std 0.0, max 5.379648208618164
+distance protein-mol: mean 6.827269061204788e-08, std 0.0, max 6.827269061204788e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings2629337228/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.220688343048096, std 0.0, max 6.220688343048096
+distance protein-mol: mean 7.180786099070247e-08, std 0.0, max 7.180786099070247e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings3196761634/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.721456527709961, std 0.0, max 7.721456527709961
+distance protein-mol: mean 9.335859374459687e-08, std 0.0, max 9.335859374459687e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings3159027241/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 8.066179275512695, std 0.0, max 8.066179275512695
+distance protein-mol: mean 1.2495756607222575e-07, std 0.0, max 1.2495756607222575e-07
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings2964794394/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.890316009521484, std 0.0, max 6.890316009521484
+distance protein-mol: mean 3.6995984942223004e-08, std 0.0, max 3.6995984942223004e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings2976348220/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.074545383453369, std 0.0, max 6.074545383453369
+distance protein-mol: mean 3.0157828234678163e-08, std 0.0, max 3.0157828234678163e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+result_folder/main_db_42_05_rew_out/index0_idx_0/ref_proteinFile.pdb 0 26 -9714.37279899991
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings3132646298/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.145349979400635, std 0.0, max 6.145349979400635
+distance protein-mol: mean 4.5663306025289785e-08, std 0.0, max 4.5663306025289785e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings4195492683/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 9.356918334960938, std 0.0, max 9.356918334960938
+distance protein-mol: mean 4.646650708650668e-08, std 0.0, max 4.646650708650668e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings612568588/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.202908992767334, std 0.0, max 7.202908992767334
+distance protein-mol: mean 8.13389391396413e-08, std 0.0, max 8.13389391396413e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings2780427583/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.617880344390869, std 0.0, max 7.617880344390869
+distance protein-mol: mean 8.105282489623278e-08, std 0.0, max 8.105282489623278e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings3843099973/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.282783031463623, std 0.0, max 6.282783031463623
+distance protein-mol: mean 7.723373585122317e-08, std 0.0, max 7.723373585122317e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings2115930895/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.490590572357178, std 0.0, max 7.490590572357178
+distance protein-mol: mean 1.5232004102472274e-08, std 0.0, max 1.5232004102472274e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1891989503/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 8.65315055847168, std 0.0, max 8.65315055847168
+distance protein-mol: mean 3.852589713915222e-08, std 0.0, max 3.852589713915222e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings149845321/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.293907165527344, std 0.0, max 7.293907165527344
+distance protein-mol: mean 4.299355893522261e-08, std 0.0, max 4.299355893522261e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1415215390/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 4.72297477722168, std 0.0, max 4.72297477722168
+distance protein-mol: mean 2.139872457007641e-08, std 0.0, max 2.139872457007641e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings3578828884/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.705005645751953, std 0.0, max 7.705005645751953
+distance protein-mol: mean 1.2726930265216652e-07, std 0.0, max 1.2726930265216652e-07
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings712024711/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.284336090087891, std 0.0, max 7.284336090087891
+distance protein-mol: mean 5.744628950310471e-08, std 0.0, max 5.744628950310471e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings2296504682/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.568281173706055, std 0.0, max 6.568281173706055
+distance protein-mol: mean 8.535712225921088e-08, std 0.0, max 8.535712225921088e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings4098257455/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 9.1737060546875, std 0.0, max 9.1737060546875
+distance protein-mol: mean 6.37898267541459e-08, std 0.0, max 6.37898267541459e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings79442071/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 8.0264892578125, std 0.0, max 8.0264892578125
+distance protein-mol: mean 6.00137397555045e-08, std 0.0, max 6.00137397555045e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings2323946365/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 5.758800506591797, std 0.0, max 5.758800506591797
+distance protein-mol: mean 5.5259139486452113e-08, std 0.0, max 5.5259139486452113e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings198864651/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 5.671728610992432, std 0.0, max 5.671728610992432
+distance protein-mol: mean 3.960906624911331e-08, std 0.0, max 3.960906624911331e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings558237005/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 8.706005096435547, std 0.0, max 8.706005096435547
+distance protein-mol: mean 1.2029525464640756e-07, std 0.0, max 1.2029525464640756e-07
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+[Errno 36] File name too long: 'result_folder/main_db_42_05_rew_out/index0_idx_0/rank1_receptor_lddt0.45_affinity6.96_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed_relaxed.pdb'
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings2656092720/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.764617919921875, std 0.0, max 6.764617919921875
+distance protein-mol: mean 3.789845948176662e-08, std 0.0, max 3.789845948176662e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings2003123026/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 5.755245208740234, std 0.0, max 5.755245208740234
+distance protein-mol: mean 9.528852018547695e-08, std 0.0, max 9.528852018547695e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings879151514/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.679566383361816, std 0.0, max 7.679566383361816
+distance protein-mol: mean 6.999184876121944e-08, std 0.0, max 6.999184876121944e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings3799111545/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 5.837481498718262, std 0.0, max 5.837481498718262
+distance protein-mol: mean 2.2213340500343293e-08, std 0.0, max 2.2213340500343293e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings3926792275/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 5.912245273590088, std 0.0, max 5.912245273590088
+distance protein-mol: mean 4.2121783394577506e-08, std 0.0, max 4.2121783394577506e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings4151271206/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 5.046792030334473, std 0.0, max 5.046792030334473
+distance protein-mol: mean 6.19888282926695e-08, std 0.0, max 6.19888282926695e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+result_folder/main_db_42_05_rew_out/index0_idx_0/ref_proteinFile.pdb 0 20 -9771.889119485595
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1251288442/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.460525035858154, std 0.0, max 7.460525035858154
+distance protein-mol: mean 1.1806338306996622e-07, std 0.0, max 1.1806338306996622e-07
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings2360183434/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.622994899749756, std 0.0, max 6.622994899749756
+distance protein-mol: mean 6.865987245419092e-08, std 0.0, max 6.865987245419092e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings390003503/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 5.916098594665527, std 0.0, max 5.916098594665527
+distance protein-mol: mean 4.8576914934983506e-08, std 0.0, max 4.8576914934983506e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings3489593290/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 10.510515213012695, std 0.0, max 10.510515213012695
+distance protein-mol: mean 1.0374424874726174e-07, std 0.0, max 1.0374424874726174e-07
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings2014055799/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 5.7989373207092285, std 0.0, max 5.7989373207092285
+distance protein-mol: mean 3.816559512870299e-08, std 0.0, max 3.816559512870299e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings296138798/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.276073455810547, std 0.0, max 6.276073455810547
+distance protein-mol: mean 8.009133267705693e-08, std 0.0, max 8.009133267705693e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1141648666/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.9264750480651855, std 0.0, max 6.9264750480651855
+distance protein-mol: mean 1.5258927987815696e-07, std 0.0, max 1.5258927987815696e-07
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings3314869501/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.692336082458496, std 0.0, max 7.692336082458496
+distance protein-mol: mean 8.224600378525793e-08, std 0.0, max 8.224600378525793e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings585057114/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 10.45122241973877, std 0.0, max 10.45122241973877
+distance protein-mol: mean 3.410234583611782e-08, std 0.0, max 3.410234583611782e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1817271705/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 8.248553276062012, std 0.0, max 8.248553276062012
+distance protein-mol: mean 7.748604247126423e-08, std 0.0, max 7.748604247126423e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings3001205726/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.960082054138184, std 0.0, max 7.960082054138184
+distance protein-mol: mean 8.070507107049707e-08, std 0.0, max 8.070507107049707e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings4186316885/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 8.365175247192383, std 0.0, max 8.365175247192383
+distance protein-mol: mean 8.067212320383987e-08, std 0.0, max 8.067212320383987e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1903592629/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.8220038414001465, std 0.0, max 6.8220038414001465
+distance protein-mol: mean 5.806421299325848e-08, std 0.0, max 5.806421299325848e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings3042538141/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.9711594581604, std 0.0, max 6.9711594581604
+distance protein-mol: mean 7.740325003169346e-08, std 0.0, max 7.740325003169346e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1431437301/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.192087650299072, std 0.0, max 7.192087650299072
+distance protein-mol: mean 2.7530207447057364e-08, std 0.0, max 2.7530207447057364e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1290093992/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 6.284943103790283, std 0.0, max 6.284943103790283
+distance protein-mol: mean 8.970767595428697e-08, std 0.0, max 8.970767595428697e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings192290821/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 7.889885425567627, std 0.0, max 7.889885425567627
+distance protein-mol: mean 7.861931550223744e-08, std 0.0, max 7.861931550223744e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/esm_models
+Transferred model to GPU
+Read data/prepared_for_esm_main_db_42_05_rew_out.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+Reading molecules and generating local structures with RDKit
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+loading data from memory:  data/cache_torsion/limit0_INDEX_maxLigSizeNone_H0_recRad15.0_recMax24_esmEmbeddings1289614425/heterographs.pkl
+Number of complexes:  1
+radius protein: mean 56.86490249633789, std 0.0, max 56.86490249633789
+radius molecule: mean 4.855811595916748, std 0.0, max 4.855811595916748
+distance protein-mol: mean 4.248003193652039e-08, std 0.0, max 4.248003193652039e-08
+rmsd matching: mean 0.0, std 0.0, max 0
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_05_rew_out
+
+*
+*
+*
+*
+*
+Rewards: {'DB': <freedpp.utils.CacheAndPool object at 0x7fa6cd2b96c0>}
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+O=C(c1ccoc1)c1cc(C(F)(F)F)ccc1-c1ccoc1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+Cn1ncc2c1CC(c1ccc(NN)cc1-c1cc(-c3ccc([N+](=O)[O-])cc3)on1)CC2
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+C=NC1CCOC1c1ccc(NC(=S)[NH2+]C2CCCC2)cc1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CC(C)CC(=O)c1ccc(Cc2ccccn2)cc1NC(=O)C=O
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+O=[N+]([O-])c1ccc(C2CCN(c3ccccc3NCc3c[nH]c4ccccc34)CC2C2CC2)cc1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CC1CCCCC1c1nnc(-c2ccc(N)c(-c3ccc4c(c3)OCO4)c2)o1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+C=CCOc1ccccc1Nc1ccc(C=O)c(C(N)CC)c1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CS(=O)(=O)c1cc(-c2ccc(N3CCCCC3)c(C3CCS(=O)(=O)C3)c2)ccc1[N+](=O)[O-]
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+C=CCOc1cccc(NC(C=O)C(C)[NH2+]C2CCC(C3COc4ccccc4O3)C2)c1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CC1CCNCC1C1CCCC1c1ccc(Cl)cc1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+NC(c1c[nH]c2ccccc12)C1Nc2ccc(C(=O)C(F)Oc3ccccc3)cc2C2C=CCC21
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CC(C)C(NN)c1cccc(C(=O)C(=O)C23CC4CC(CC(C4)C2)C3)c1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CCC(N)c1ccc(C(C(C)C)S(=O)(=O)NCc2ccccc2[N+](=O)[O-])cc1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CS(=O)c1ccc(NNCNC(=O)NC2CC2)cc1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CC1CCCCC1c1cc(C=CC(=O)C=O)ccc1C#N
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+O=CCc1cc(Nc2ccccc2)ccc1S(=O)c1ccc2c(c1)OCO2
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CC(Oc1ccc(C#N)cc1O)C(=O)CN[SH](=O)=O
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CN(CC(=O)c1ccc(SCC(N)=O)cc1-c1cncnc1)[SH](=O)=O
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+C#Cc1ccc(-c2nnco2)cc1S[NH+]1CCc2ccccc2C1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+c1cc(N2CCOCC2)c2nccc(-c3cc(C4CCCCC4)ccc3-c3cncnc3)c2c1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+NNc1cc(-c2ccc(Cc3ccccn3)c(Cl)c2)ccc1NC(=O)CS
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+COCc1ccc(C2CC(N3CCOCC3)Cc3c2cnn3C)cc1S(C)(=O)=O
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+O=S(c1ccc(C2CCCC2)cc1C1CCCC1O)N1CCOCC1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CN(C)c1ccc(C(N)=O)cc1C1C=CC(C(=O)N2CCCC2)C1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+O=[N+]([O-])c1ccccc1-c1cc(-c2ncc(Cc3ccccc3)cn2)ccc1-c1ccc2c(c1)OCO2
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CCOC(=O)c1ccc(NCc2c[nH]c3ccccc23)cc1C(C)(C)OC=O
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+O=C(CSc1ccc(C2CCC(=O)N2)cc1)NC1CCN(Cc2ccccc2)CC1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+O=COC1CCOC1c1ccc(-c2cc(C(=O)C=O)cc3c2OCO3)cc1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CCC(C=O)Nc1cc(C2CCCC(Cc3ccccc3)C2)ccc1C12CC3CC(CC(C3)C1)C2
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CC([NH2+]C1CCCC1)N1CC[NH+](c2cccc(Oc3cccc(OCF)c3)c2)CC1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CS(=O)c1ccc(C2CCCC2O)cc1C1CCCC(c2cccc3cccnc23)C1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+O=CCNc1ccc(Cl)cc1NC1CC1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+O=C(c1cc(-c2cccc(OC34CC5CC(CC(C5)C3)C4)c2)ccc1N1CCCC1)C1C=CCC1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+Cn1ncc2c1CCCC2c1ccc(C2OCCC2c2ccccc2S(C)(=O)=O)s1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+C=CCO[NH+](c1ccc(C23CC4CC(CC(C4)C2)C3)c(-c2ccncc2)c1)C1CCCC1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+O=C(c1ccccc1NCc1c[nH]c2ccccc12)C1C=CC(C2CC(Nc3ccccc3)CC2O)C1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+OC1CCCN(c2cc(-c3ccc(C(F)(F)F)cc3Cl)ccc2-c2ccc3c(c2)OCO3)C1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+C=CCOc1ccc(C=O)cc1C(=O)C(C)SS(=O)(=O)NC
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CNCC(=O)C1C(c2ccccc2NC2CC2)CCC1C1CCCC1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CC1C(c2ccc(-c3ccc4c(c3)OCO4)c(-c3ccc4c(c3)C3C=CCC3CN4)c2)CCCC1C12CC3CC(CC(C3)C1)C2
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+COCNC(=O)CSNC(c1cccc(NC(C)C)c1)c1c[nH]c2ccccc12
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CCC(NC1=CC(C(=O)[O-])CC1)C(=O)C(NN)c1ccccc1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+c1ccc(C2CCC(C34CC5CC(CC(C5)C3)C4)C2)c(-c2cnc(-c3nnco3)nc2)c1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+O=C(C(=O)c1ccccc1C(F)OC1CCCC1O)c1nccs1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+Cn1ncc2c1CC(S(=O)(=O)NCc1ccccc1C(=O)c1ncccn1)CC2
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CC(C)(O)c1ccc(C(O)F)c(C2CCCCC2C2CCCCC2)c1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+C#CC1CS(=O)(=O)CC1C1CCC(c2cccc(C3=CC(C(=O)[O-])CC3)c2)C1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+Cc1ccc(-c2ccc(-c3ccccc3N)cc2Cl)c(C2CCCC2)c1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+COCCC(c1ccccc1)c1ccccc1C(C)C(N)N1CCCC1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+c1cc(-c2c[nH]c3cc(NCc4c[nH]c5ccccc45)ccc23)cc(C(NC2CCCO2)c2c[nH]c3ccccc23)c1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+COCCC(c1ccccc1)c1ccc(C=O)cc1S
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+C=CCOc1ccc(-c2nccs2)cc1-c1nnc(S(C)(=O)=O)o1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CS(=O)(=O)NC(=S)c1ccc(C=NCc2ccccn2)cc1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+C=CCOc1ccc(C2Nc3ccccc3C3C=CCC32)cc1C(c1ccccc1)c1ccc([N+](=O)[O-])cc1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CN(CC=O)c1ccc(C2CS(=O)(=O)CC2C2CCC([NH2+]C(N)c3c[nH]c4ccccc34)C2)cc1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+NC(=O)CSc1cc(-c2cc(C3Nc4ccccc4C4C=CCC43)ccc2Cc2ccccc2)cc2c1OCO2
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+C=CCOc1ccc(C(=O)C(C)Oc2ccc(N=C)c(Cl)c2)cc1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+O=S(=O)(c1ccc2c(c1)CC[NH2+]C2)c1ccc(-c2ccc3c(c2)CC[NH2+]C3)cc1N1CCOCC1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+CN(CC(=O)S)c1ccc(S(=O)(=O)c2ccccc2)c(Cc2ccccn2)c1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+COCc1cc(-c2ccc(NC3CC3)c(NC(N)=O)c2)ccc1[N+](=O)[O-]
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+Nc1ccccc1CC(F)c1cc(Oc2ccccc2)ccc1Cc1ccccc1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+COCCc1ccc(NN)cc1[NH+]1CCc2cc(C3CCCCC3C)ccc2C1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+C=CCOc1cc(-c2ccc([SH](=O)=O)cc2)ccc1OC(F)[NH2+]C1CCCC1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
+/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0102.py /mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind
+O=C([O-])C=COc1cccc(S(=O)(=O)c2ccccc2)c1
+../DynamicBind/data/4djh_cleaned.pdb
+inference complete.
+final step structure relax complete.
