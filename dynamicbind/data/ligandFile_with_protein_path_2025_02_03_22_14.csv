@@ -1,0 +1,2 @@
+ligand,protein_path
+CN(C)c1ccc(C(N)=O)cc1C1C=CC(C(=O)N2CCCC2)C1,../DynamicBind/data/4djh_cleaned.pdb

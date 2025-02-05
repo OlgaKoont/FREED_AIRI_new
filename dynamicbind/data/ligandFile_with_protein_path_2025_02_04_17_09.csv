@@ -1,0 +1,2 @@
+ligand,protein_path
+COCNC(=O)CSNC(c1cccc(NC(C)C)c1)c1c[nH]c2ccccc12,../DynamicBind/data/4djh_cleaned.pdb
