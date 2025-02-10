@@ -58,7 +58,7 @@ class DB:
 
     def run_inference(self, ligands_list, *, python, relax_python, results, proteinFile, num_workers,
                       header, paper, model, rigid_protein, hts, device_num, seed,
-                      no_inference, no_relax, samples_per_complex, batch_size, 
+                      no_inference, no_relax, samples_per_complex, batch_size=32, 
                       savings_per_complex, inference_steps, no_clean, **kwargs):
         print(ligands_list)
         os.environ['PATH'] = os.path.dirname(relax_python) + ":" + os.environ['PATH']
