@@ -64,7 +64,7 @@ def parse_args():
     parser.add_argument('--replay_size', type=int, default=int(1e6))
     parser.add_argument('--polyak', type=float, default=0.995)
     parser.add_argument('--tau', type=float, default=1e-1)
-    parser.add_argument('--steps_per_epoch', type=int, default=256)
+    parser.add_argument('--steps_per_epoch', type=int, default=128)
     parser.add_argument('--epochs', type=int, default=80)
     parser.add_argument('--train_alpha', type=str2bool, default=True)
 
