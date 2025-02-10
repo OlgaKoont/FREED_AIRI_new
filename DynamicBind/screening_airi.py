@@ -72,7 +72,7 @@ parser.add_argument('--ckpt', type=str, default='best_ema_inference_epoch_model.
 parser.add_argument('--confidence_model_dir', type=str, default=None, help='Path to folder with trained confidence model and hyperparameters')
 parser.add_argument('--confidence_ckpt', type=str, default='best_model_epoch75.pt', help='Checkpoint to use for the confidence model')
 
-parser.add_argument('--batch_size', type=int, default=32, help='')
+parser.add_argument('--batch_size', type=int, default=2, help='')
 parser.add_argument('--cache_path', type=str, default='data/cache', help='Folder from where to load/restore cached dataset')
 parser.add_argument('--no_random', action='store_true', default=False, help='Use no randomness in reverse diffusion')
 parser.add_argument('--no_final_step_noise', action='store_true', default=False, help='Use no noise in the final step of the reverse diffusion')
@@ -117,7 +117,7 @@ if args.confidence_model_dir is not None:
         confidence_args = Namespace(**yaml.full_load(f))
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
+print(device)
 if args.protein_ligand_csv is not None:
     df = pd.read_csv(args.protein_ligand_csv)
     # df = df[:10]
@@ -135,7 +135,6 @@ else:
     protein_path_list = [args.protein_path]
     ligand_descriptions = [args.ligand]
 
-print(name_list, ligand_descriptions)
 test_dataset = PDBBindScoring(transform=None, root='', name_list=name_list, protein_path_list=protein_path_list, ligand_descriptions=ligand_descriptions,
                        receptor_radius=score_model_args.receptor_radius, cache_path=args.cache_path,
                        remove_hs=score_model_args.remove_hs, max_lig_size=None,
@@ -146,22 +145,12 @@ test_dataset = PDBBindScoring(transform=None, root='', name_list=name_list, prot
                        esm_embeddings_path= args.esm_embeddings_path if score_model_args.esm_embeddings_path is not None else None,
                        require_ligand=True,require_receptor=True, num_workers=args.num_workers, keep_local_structures=args.keep_local_structures, use_existing_cache=args.use_existing_cache)
 test_loader = DataLoader(dataset=test_dataset, batch_size=1, shuffle=False)
+
 t_to_sigma = partial(t_to_sigma_compl, args=score_model_args)
 
-model = get_model(score_model_args, device, t_to_sigma=t_to_sigma, no_parallel=False)
-#state_dict = torch.load(f'{args.model_dir}/{args.ckpt}', map_location=torch.device('cuda'))
-model = torch.nn.DataParallel(model)
-state_dict = torch.load(f'{args.model_dir}/{args.ckpt}', map_location=device)
-
-#from collections import OrderedDict
-#new_state_dict = OrderedDict()
-
-#for k, v in state_dict.items():
-#    k = k[7:]
-#    new_state_dict[k] = v
-
-#model.load_state_dict(new_state_dict, strict=True)
-model.load_state_dict(state_dict, strict=False)
+model = get_model(score_model_args, device, t_to_sigma=t_to_sigma, no_parallel=True)
+state_dict = torch.load(f'{args.model_dir}/{args.ckpt}', map_location=torch.device('cpu'))
+model.load_state_dict(state_dict, strict=True)
 model = model.to(device)
 model.eval()
 
@@ -195,85 +184,82 @@ print('Size of test dataset: ', len(test_dataset))
 
 affinity_pred = {}
 all_complete_affinity = []
-for idx, orig_complex_graph in tqdm(enumerate(test_loader)):
-    # if idx not in [54, 123, 141, 157, 165, 251]:continue
-    try:
-        data_list = [copy.deepcopy(orig_complex_graph) for _ in range(N)]
-        randomize_position(data_list, score_model_args.no_torsion, args.no_random,score_model_args.tr_sigma_max,score_model_args.rot_sigma_max, score_model_args.tor_sigma_max,score_model_args.res_tr_sigma_max,score_model_args.res_rot_sigma_max)
-        pdb = None
-        lig = orig_complex_graph.mol[0]
-        receptor_pdb = orig_complex_graph.rec_pdb[0]
-        pdb_or_cif = receptor_pdb.get_full_id()[0]
-        if score_model_args.remove_hs: lig = RemoveHs(lig)
-        visualization_list = None
-
-        start_time = time.time()
-        confidence = None
-        steps = args.actual_steps if args.actual_steps is not None else args.inference_steps
-        final_data_list, data_list_step, all_lddt_pred, all_affinity_pred = [],[[] for _ in range(steps)],[],[]
-        for i in range(int(np.ceil(len(data_list)/args.batch_size))):
-            try:
-                outputs = sampling(data_list=data_list[i*args.batch_size:(i+1)*args.batch_size], model=model,
-                                 inference_steps=steps,
-                                 tr_schedule=tr_schedule, rot_schedule=rot_schedule, tor_schedule=tor_schedule, res_tr_schedule=res_tr_schedule, res_rot_schedule=res_rot_schedule, res_chi_schedule=res_chi_schedule,
-                                 device=device, t_to_sigma=t_to_sigma, model_args=score_model_args, no_random=args.no_random,
-                                 ode=args.ode, visualization_list=visualization_list, batch_size=args.batch_size, no_final_step_noise=args.no_final_step_noise, protein_dynamic=args.protein_dynamic)
-                all_lddt_pred.append(outputs[2])
-                all_affinity_pred.append(outputs[3])
-            except Exception as e:
-                #raise e
-                print(e)
-        #print(all_affinity_pred, all_lddt_pred)
-        all_lddt_pred = torch.cat(all_lddt_pred)
-        all_affinity_pred = torch.cat(all_affinity_pred)
-        ligand_pos = np.asarray([complex_graph['ligand'].pos.cpu().numpy() + orig_complex_graph.original_center.cpu().numpy() for complex_graph in final_data_list])
-        final_receptor_pdbs = []
-
-        # with Timer('modify pdb'):
-        #     final_receptor_pdbs = pool.map(modify_pdb, zip([copy.deepcopy(receptor_pdb) for _ in range(len(data_list))], data_list))
-        # run_times.append(time.time() - start_time)
-
-        # sample_ligand_path_list = []
-        # sample_protein_path_list = []
-        # for rank, pos in enumerate(ligand_pos):
-        #     mol_pred = copy.deepcopy(lig)
-        #     if rank == 0: write_mol_with_coords(mol_pred, pos, os.path.join(write_dir, f'rank{rank+1}.sdf'))
-        #     write_mol_with_coords(mol_pred, pos, os.path.join(write_dir, f'rank{rank+1}_ligand.sdf'))
-        #     save_protein(final_receptor_pdbs[rank],os.path.join(write_dir, f'rank{rank+1}_receptor.pdb'))
-        #     sample_ligand_path_list.append(os.path.join(write_dir, f'rank{rank+1}_ligand.sdf'))
-        #     sample_protein_path_list.append(os.path.join(write_dir, f'rank{rank+1}_receptor.pdb'))
+steps = args.actual_steps if args.actual_steps is not None else args.inference_steps
+# data_list = list(chain(*[[copy.deepcopy(orig_complex_graph) for _ in range(N)] for orig_complex_graph in test_loader]))
+data_list = []
+complex_names = []
+for orig_complex_graph in test_loader:
+    complex_names.append(orig_complex_graph.name[0])
+    for _ in range(N):
+        data_list.append(copy.deepcopy(orig_complex_graph))
 
 
-        all_lddt_pred = all_lddt_pred.view(-1).cpu().numpy()
-        # print(all_lddt_pred)
-        all_affinity_pred = all_affinity_pred.view(-1).cpu().numpy()
-        final_affinity_pred = np.minimum((all_affinity_pred*all_lddt_pred).sum() / (all_lddt_pred.sum()+1e-12),15.)
+randomize_position(
+    data_list,
+    score_model_args.no_torsion,
+    args.no_random,
+    score_model_args.tr_sigma_max,
+    score_model_args.rot_sigma_max,
+    score_model_args.tor_sigma_max,
+    score_model_args.res_tr_sigma_max,
+    score_model_args.res_rot_sigma_max
+)
 
-        affinity_pred[orig_complex_graph.name[0]] = final_affinity_pred
+all_lddt_pred, all_affinity_pred = [],[]
+I = int(np.ceil(len(data_list) / args.batch_size))
+for i in range(I):
+    batch = data_list[i*args.batch_size:(i+1)*args.batch_size]
+    # complexes_names = [data.name[0] for data in batch]
+    outputs = sampling(data_list=batch,
+        model=model,
+        inference_steps=steps,
+        tr_schedule=tr_schedule,
+        rot_schedule=rot_schedule,
+        tor_schedule=tor_schedule,
+        res_tr_schedule=res_tr_schedule,
+        res_rot_schedule=res_rot_schedule,
+        res_chi_schedule=res_chi_schedule,
+        device=device,
+        t_to_sigma=t_to_sigma,
+        model_args=score_model_args,
+        no_random=args.no_random,
+        ode=args.ode,
+        visualization_list=None,
+        batch_size=args.batch_size,
+        no_final_step_noise=args.no_final_step_noise,
+        protein_dynamic=args.protein_dynamic
+    )
+    all_lddt_pred.append(outputs[2])
+    all_affinity_pred.append(outputs[3])
 
-        complete_affinity = pd.DataFrame({'name':orig_complex_graph.name[0],'lddt':all_lddt_pred,'affinity':all_affinity_pred})
-        all_complete_affinity.append(complete_affinity)
-        #print(all_complete_affinity)
-        names_list.append(orig_complex_graph.name[0])
-    except Exception as e:
-       # raise(e)
-        print("Failed on", orig_complex_graph["name"], e)
-        failures += 1
+all_lddt_pred = torch.cat(all_lddt_pred).cpu().split(N)
+all_affinity_pred = torch.cat(all_affinity_pred).cpu().split(N)
+for complex_name, lddt_pred, affinity_pred_ in zip(complex_names, all_lddt_pred, all_affinity_pred):
+    lddt_pred = lddt_pred.view(-1).numpy()
+    affinity_pred_ = affinity_pred_.view(-1).numpy()
+    final_affinity_pred = np.minimum((affinity_pred_ * lddt_pred).sum() / (lddt_pred.sum() + 1e-12), 15.)
+
+    affinity_pred[complex_name] = final_affinity_pred
+
+    complete_affinity = pd.DataFrame(
+        {
+            'name':complex_name,
+            'lddt':lddt_pred,
+            'affinity':affinity_pred_
+        }
+    )
+    all_complete_affinity.append(complete_affinity)
 
 print(f'Failed for {failures} complexes')
 print(f'Skipped {skipped} complexes')
 
-affinity_pred_df = pd.DataFrame({'name':list(affinity_pred.keys()),'affinity':list(affinity_pred.values())})
+affinity_pred_df = pd.DataFrame(
+    {
+        'name':list(affinity_pred.keys()),
+        'affinity':list(affinity_pred.values())
+    }
+)
 affinity_pred_df.to_csv(f'{args.out_dir}/affinity_prediction.csv',index=False)
 pd.concat(all_complete_affinity).to_csv(f'{args.out_dir}/complete_affinity_prediction.csv',index=False)
-
-# min_self_distances = np.array(min_self_distances_list)
-# confidences = np.array(confidences_list)
-# names = np.array(names_list)
-# run_times = np.array(run_times)
-# np.save(f'{args.out_dir}/min_self_distances.npy', min_self_distances)
-# np.save(f'{args.out_dir}/confidences.npy', confidences)
-# np.save(f'{args.out_dir}/run_times.npy', run_times)
-# np.save(f'{args.out_dir}/complex_names.npy', np.array(names))
 
 print(f'Results are in {args.out_dir}')
