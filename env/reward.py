@@ -14,12 +14,26 @@ class Reward:
         self.weight = weight
         self.preprocess = preprocess
 
+class Reward:
+    def __init__(self, property, reward, weight=1.0, preprocess=None):
+        self.property = property
+        self.reward = reward
+        self.weight = weight
+        self.preprocess = preprocess
+
     def __call__(self, input):
-        if self.preprocess:
-            input = self.preprocess(input)
-        property = self.property(input)
-        reward = self.weight * self.reward(property)
-        return reward, property
+        property_values = self.property(input)
+        if isinstance(property_values, pd.DataFrame) or isinstance(property_values, pd.Series):
+            list_of_rewards_and_properties = []
+            for i in range(len(self.reward(property_values))):
+                list_of_rewards_and_properties.append((self.weight * self.reward(property_values)[i], 
+                                                  property_values.iloc[i]['affinity'] if isinstance(property_values,pd.DataFrame) else None))
+        
+        else:
+            raise ValueError("False datatype")
+    
+        return list_of_rewards_and_properties
+
 
 def identity(x):
     return x
