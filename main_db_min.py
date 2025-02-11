@@ -53,6 +53,7 @@ def init_rewards(args):
     hard = args['reward_version'] == 'hard'
     preprocess = MolFromSmiles
     costs = {
+       #'DB': Reward(DB(args['db_config']), OutOfRange(lower=10, upper=15, hard=hard)),
         'DB': Reward(DB(args['db_config']), partial(min, 0)),
         'DockingScore_1': Reward(DockingVina(args['docking_config_1']), partial(min, 0)),
         'DockingScore_2': Reward(DockingVina(args['docking_config_2']), partial(min, 0)),

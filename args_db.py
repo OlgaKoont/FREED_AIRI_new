@@ -45,7 +45,7 @@ def parse_args():
     parser.add_argument('--timelimit', type=int, default=4)
 
     # model updating
-    parser.add_argument('--batch_size', type=int, default=256)
+    parser.add_argument('--batch_size', type=int, default=32)
     parser.add_argument('--actor_lr', type=float, default=1e-4)
     parser.add_argument('--critic_lr', type=float, default=1e-4)
     parser.add_argument('--alpha_lr', type=float, default=5e-4)
@@ -69,7 +69,7 @@ def parse_args():
     parser.add_argument('--train_alpha', type=str2bool, default=True)
 
     # Objectives and Rewards
-    parser.add_argument('--objectives', type=str2strs, default=['DockingScore'])
+    parser.add_argument('--objectives', type=str2strs, default=['DockingScore_1'])
     parser.add_argument('--weights', type=str2floats, default=[1.0])
     parser.add_argument('--reward_version', default='hard', choices=['soft', 'hard'])
     parser.add_argument('--alert_collections', type=str)
@@ -81,7 +81,7 @@ def parse_args():
     parser.add_argument('--proteinFile', type=str, default='test.pdb')#, help='protein file')
   # parser.add_argument('--ligandFile', type=str, default='ligand.csv')#, help='contians the smiles, should contain a column named ligand')
     parser.add_argument('--samples_per_complex', type=int, default=1)#, help='num of samples data generated.')
-  # parser.add_argument('--batch_size', type=int, default=32)#, help='batch size.')
+    parser.add_argument('--batch_size_db', type=int, default=32)#, help='batch size.')
     parser.add_argument('--savings_per_complex', type=int, default=1)#, help='num of samples data saved for movie generation.')
     parser.add_argument('--inference_steps', type=int, default=20)#, help='num of coordinate updates. (movie frames)')
     parser.add_argument('--header', type=str, default='test')#, help='informative name used to name result folder')
@@ -102,6 +102,7 @@ def parse_args():
     parser.add_argument('--rigid_protein', action='store_true', default=False)#, help='Use no noise in the final step of the reverse diffusion')
     parser.add_argument('--hts', action='store_true', default=False)#, help='high-throughput mode')
   # parser.add_argument('--n_conf', type=int, default=3)
+    parser.add_argument('--ckpt', type=str, default='best_ema_inference_epoch_model.pt', help='Checkpoint to use for the score model')
 
 
     # Docking
@@ -164,7 +165,7 @@ def get_db_config(args):
         'proteinFile': args.proteinFile,
        #'ligandFile': args.ligandFile,
         'samples_per_complex': args.samples_per_complex,
-        'batch_size': args.batch_size,
+        'batch_size_db': args.batch_size_db,
         'savings_per_complex': args.savings_per_complex,
         'samples_per_complex': args.samples_per_complex,
         'inference_steps': args.inference_steps,
