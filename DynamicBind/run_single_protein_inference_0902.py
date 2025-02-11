@@ -58,7 +58,7 @@ class DB:
 
     def run_inference(self, ligands_list, *, python, relax_python, results, proteinFile, num_workers,
                       header, paper, model, rigid_protein, hts, device_num, seed,
-                      no_inference, no_relax, samples_per_complex, batch_size=32, 
+                      no_inference, no_relax, samples_per_complex, batch_size_db, 
                       savings_per_complex, inference_steps, no_clean, **kwargs):
         print(ligands_list)
         os.environ['PATH'] = os.path.dirname(relax_python) + ":" + os.environ['PATH']
@@ -105,7 +105,7 @@ class DB:
             self.do(cmd)
             cmd = f"MKL_SERVICE_FORCE_INTEL=1 MKL_THREADING_LAYER=GNU CUDA_VISIBLE_DEVICES={device_num} {python} {script_folder}/screening_airi.py --seed {seed} --ckpt {ckpt} {protein_dynamic}"
             cmd += f" --save_visualisation --model_dir {model_workdir}  --protein_ligand_csv {ligandFile_with_protein_path} "
-            cmd += f" --esm_embeddings_path data/esm2_output --out_dir {results}/{header} --inference_steps {inference_steps} --samples_per_complex {samples_per_complex} --savings_per_complex {savings_per_complex} --batch_size {batch_size} --actual_steps {inference_steps} --no_final_step_noise"
+            cmd += f" --esm_embeddings_path data/esm2_output --out_dir {results}/{header} --inference_steps {inference_steps} --samples_per_complex {samples_per_complex} --savings_per_complex {savings_per_complex} --batch_size {batch_size_db} --actual_steps {inference_steps} --no_final_step_noise"
             self.do(cmd)
             t1 = time.time()
             print("time", t1 - t0)
@@ -119,7 +119,7 @@ class DB:
                 self.do(cmd)
                 cmd = f"CUDA_VISIBLE_DEVICES={device_num} {python} {script_folder}/inference.py --seed {seed} --ckpt {ckpt} {protein_dynamic}"
                 cmd += f" --save_visualisation --model_dir {model_workdir}  --protein_ligand_csv {ligandFile_with_protein_path} "
-                cmd += f" --esm_embeddings_path data/esm2_output --out_dir {results}/{header} --inference_steps {inference_steps} --samples_per_complex {samples_per_complex} --savings_per_complex {savings_per_complex} --batch_size {batch_size} --actual_steps {inference_steps} --no_final_step_noise"
+                cmd += f" --esm_embeddings_path data/esm2_output --out_dir {results}/{header} --inference_steps {inference_steps} --samples_per_complex {samples_per_complex} --savings_per_complex {savings_per_complex} --batch_size {batch_size_db} --actual_steps {inference_steps} --no_final_step_noise"
                 self.do(cmd)
                 print("inference complete.")
 

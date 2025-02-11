@@ -72,7 +72,7 @@ parser.add_argument('--ckpt', type=str, default='best_ema_inference_epoch_model.
 parser.add_argument('--confidence_model_dir', type=str, default=None, help='Path to folder with trained confidence model and hyperparameters')
 parser.add_argument('--confidence_ckpt', type=str, default='best_model_epoch75.pt', help='Checkpoint to use for the confidence model')
 
-parser.add_argument('--batch_size', type=int, default=2, help='')
+parser.add_argument('--batch_size', type=int, default=32, help='')
 parser.add_argument('--cache_path', type=str, default='data/cache', help='Folder from where to load/restore cached dataset')
 parser.add_argument('--no_random', action='store_true', default=False, help='Use no randomness in reverse diffusion')
 parser.add_argument('--no_final_step_noise', action='store_true', default=False, help='Use no noise in the final step of the reverse diffusion')
@@ -144,7 +144,7 @@ test_dataset = PDBBindScoring(transform=None, root='', name_list=name_list, prot
                        atom_max_neighbors=score_model_args.atom_max_neighbors,
                        esm_embeddings_path= args.esm_embeddings_path if score_model_args.esm_embeddings_path is not None else None,
                        require_ligand=True,require_receptor=True, num_workers=args.num_workers, keep_local_structures=args.keep_local_structures, use_existing_cache=args.use_existing_cache)
-test_loader = DataLoader(dataset=test_dataset, batch_size=1, shuffle=False)
+test_loader = DataLoader(dataset=test_dataset, batch_size=32, shuffle=False)
 
 t_to_sigma = partial(t_to_sigma_compl, args=score_model_args)
 
