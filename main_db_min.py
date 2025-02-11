@@ -20,7 +20,7 @@ from rdkit.Chem.QED import qed
 from rdkit import RDLogger
 RDLogger.DisableLog('rdApp.*')
 
-from freedpp.env.reward import Reward, MolLogP, PatternFilter, OutOfRange, identity
+from freedpp.env.reward import Reward, Reward_DB, MolLogP, PatternFilter, OutOfRange, identity
 from freedpp.env.docking import DockingVina
 from freedpp.env.environment import Environment
 from freedpp.train.sac import SAC
@@ -53,8 +53,8 @@ def init_rewards(args):
     hard = args['reward_version'] == 'hard'
     preprocess = MolFromSmiles
     costs = {
-       #'DB': Reward(DB(args['db_config']), OutOfRange(lower=10, upper=15, hard=hard)),
-        'DB': Reward(DB(args['db_config']), partial(min, 0)),
+       #'DB': Reward_DB(DB(args['db_config']), OutOfRange(lower=10, upper=15, hard=hard)),
+        'DB': Reward_DB(DB(args['db_config']), partial(min, 0)),
         'DockingScore_1': Reward(DockingVina(args['docking_config_1']), partial(min, 0)),
         'DockingScore_2': Reward(DockingVina(args['docking_config_2']), partial(min, 0)),
         'LogP': Reward(MolLogP, OutOfRange(lower=0, upper=5, hard=hard), preprocess=preprocess),
@@ -70,15 +70,35 @@ def init_rewards(args):
     for name, weight in zip(args['objectives'], args['weights']):
         costs[name].weight = -weight
         processes = args['num_sub_proc'] if name in ['DB', 'DockingScore_1', 'DockingScore_2'] else 1
+       
         if name != 'DB':
             rewards[name] = CacheAndPool(costs[name], processes=processes) 
         else:
-            rewards[name] = costs[name]
+           #rewards[name] = costs[name][0]
+            reward_db = Reward_DB()
+            reward_db.add_reward('cost_name', costs['cost_name'][0])
+            rewards[name] = reward_db.get_reward('cost_name')
+    print(rewards[name])
+    return rewards
+
+'''
+    rewards = dict()
+    for name in args['objectives']:
+        rewards[name] = [None]*64 
+    for name, weight in zip(args['objectives'], args['weights']):
+        for i in range(64):
+            costs[name][i].weight = -weight
+            processes = args['num_sub_proc'] if name in ['DB', 'DockingScore_1', 'DockingScore_2'] else 1
+            if name != 'DB':
+                rewards[name][i] = CacheAndPool(costs[name][i], processes=processes) 
+            else:
+                rewards[name][i] = costs[name][i]
         print("alert", alert_table)
         print("DB", DB(args['db_config']))
         print("Rewards DB:", Reward(DB(args['db_config']), partial(min, 0)))
         print("Rewards:", rewards)
     return rewards
+'''
 
 
 def init_models(args, env, checkpoint=None):
