@@ -1,4 +1,5 @@
 from functools import partial
+import pandas as pd
 from rdkit import Chem
 from rdkit.Chem import rdMolDescriptors
 import os, sys, pickle
@@ -13,26 +14,99 @@ class Reward:
         self.reward = reward
         self.weight = weight
         self.preprocess = preprocess
+    
+    def __call__(self, input):
+        if self.preprocess:
+            input = self.preprocess(input)
+        property = self.property(input)
+        reward = self.weight * self.reward(property)
+        return reward, property
 
-class Reward:
-    def __init__(self, property, reward, weight=1.0, preprocess=None):
-        self.property = property
+class Reward_DB:
+    def __init__(self, property_df, reward, weight=1.0, preprocess=None):
+        self.rewards_dict = {}  
+        self.property = property_df
         self.reward = reward
         self.weight = weight
         self.preprocess = preprocess
 
-    def __call__(self, input):
-        property_values = self.property(input)
-        if isinstance(property_values, pd.DataFrame) or isinstance(property_values, pd.Series):
-            list_of_rewards_and_properties = []
-            for i in range(len(self.reward(property_values))):
-                list_of_rewards_and_properties.append((self.weight * self.reward(property_values)[i], 
-                                                  property_values.iloc[i]['affinity'] if isinstance(property_values,pd.DataFrame) else None))
-        
-        else:
-            raise ValueError("False datatype")
+    def add_reward(self, name, reward):
+        self.rewards_dict[name] = reward
     
-        return list_of_rewards_and_properties
+    def get_reward(self, name):
+        return self.rewards_dict.get(name)
+    
+    def __call__(self, input):
+       property_values = self.property(input)
+       if isinstance(property_values, pd.DataFrame) or isinstance(property_values, pd.Series):
+           list_of_rewards_and_properties = []
+           for i in range(len(self.reward(property_values))):
+               list_of_rewards_and_properties.append((self.weight * self.reward(property_values)[i], 
+                                                 property_values.iloc[i]['affinity'] if isinstance(property_values,pd.DataFrame) else None))
+       
+       else:
+           raise ValueError("False datatype")
+       print("list_rewards", list_of_rewards_and_properties)
+       return list_of_rewards_and_properties
+
+'''
+    def __init__(self, df_properties: pd.DataFrame,
+                 reward_funcs: list,
+                 weights=None,
+                 preprocess=None):
+        
+        rewards_list = []
+        
+        for prop_func, rew_func in zip(property[:len(reward)], reward[:len(reward)]):
+            rewards_list.append(Reward(prop_func=prop_func,
+                                       reward_func=rew_func,
+                                       weight=weights[len(rewards_list)],
+                                       preprocess=preprocess))
+        return rewards_list
+
+
+   class Reward_DB:
+    def __init__(self, property_list, reward, weight=1.0, preprocess=None):
+        self.property_list = property_list
+        self.reward = reward
+        self.weight = weight
+        self.preprocess = preprocess
+    
+    def __call__(self, input):
+        if self.preprocess:
+            input = self.preprocess(input)
+        property_list = self.property(input)
+        reward = self.weight * self.reward(property)
+      
+        return reward, property
+    def __call__(self, input):
+       property_values = self.property(input)
+       if isinstance(property_values, pd.DataFrame) or isinstance(property_values, pd.Series):
+           list_of_rewards_and_properties = []
+           for i in range(len(self.reward(property_values))):
+               list_of_rewards_and_properties.append((self.weight * self.reward(property_values)[i], 
+                                                 property_values.iloc[i]['affinity'] if isinstance(property_values,pd.DataFrame) else None))
+       
+       else:
+           raise ValueError("False datatype")
+       print("list_rewards", list_of_rewards_and_properties)
+       return list_of_rewards_and_properties
+'''
+
+    #def __call__(self, input):
+    #    if self.preprocess:
+    #       input = self.preprocess(input)
+    #    property = self.property(input)
+    #    if isinstance(property,  pd.DataFrame):
+    #        # == True:
+    #        for i in range(len(property)):
+    #            reward = self.weight * self.reward(property['affinity'][i]) 
+    #            print(reward, property['affinity'][i])
+    #            return reward, property['affinity'][i]
+    #    else:
+    #        reward = self.weight * self.reward(property)
+    #        print(reward, property)
+    #        return reward, property
 
 
 def identity(x):
