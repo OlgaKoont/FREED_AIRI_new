@@ -1,0 +1,77 @@
+INFO:root:    ../main_db_min.py --exp_root experiments --alert_collections ../alert_collections.csv --fragments ../zinc_crem.json --starting_smile c1([*:1])c([*:2])ccc([*:3])c1 --fragmentation crem --device cuda --batch_size 32 --batch_size_db 32 --device_num 2 --n_conf 1 --num_mols 1 --save_freq 1 --epochs 1 --savings_per_complex 1 --samples_per_complex 1 --commands train,sample --reward_version soft --seed 42 --hts --weights -1.0 --objectives DB --name db_4djh_42_32_32_b --proteinFile ../DynamicBind/data/4djh_cleaned.pdb --savings_per_complex 1 --inference_steps 20 --header main_db_42_32_32_b --results result_folder --python /nfs/home/okonovalova/anaconda3/envs/dynamicbind/bin/python --relax_python /nfs/home/okonovalova/anaconda3/envs/relax/bin/python
+    2025_02_11_09_55
+    --------------------------------
+    
+/mnt/tank/scratch/okonovalova/moses/moses/metrics/utils.py:24: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  _mcf.append(_pains, sort=True)['smarts'].values]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 30.02it/s]
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.59it/s]parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.59it/s]
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]loading complexes:   6%|▋         | 2/32 [00:00<00:03,  8.09it/s]loading complexes:  12%|█▎        | 4/32 [00:00<00:03,  7.82it/s]loading complexes:  19%|█▉        | 6/32 [00:00<00:02,  9.43it/s]loading complexes:  25%|██▌       | 8/32 [00:00<00:02,  9.53it/s]loading complexes:  31%|███▏      | 10/32 [00:01<00:02, 10.73it/s]loading complexes:  38%|███▊      | 12/32 [00:01<00:02,  8.48it/s]loading complexes:  41%|████      | 13/32 [00:01<00:02,  6.46it/s]loading complexes:  47%|████▋     | 15/32 [00:02<00:02,  6.05it/s]loading complexes:  50%|█████     | 16/32 [00:02<00:02,  5.72it/s]loading complexes:  56%|█████▋    | 18/32 [00:02<00:02,  6.61it/s]loading complexes:  59%|█████▉    | 19/32 [00:02<00:01,  6.86it/s]loading complexes:  69%|██████▉   | 22/32 [00:02<00:01,  9.64it/s]loading complexes:  75%|███████▌  | 24/32 [00:03<00:00,  8.30it/s]loading complexes:  78%|███████▊  | 25/32 [00:03<00:00,  8.39it/s]loading complexes:  81%|████████▏ | 26/32 [00:03<00:00,  7.97it/s]loading complexes:  84%|████████▍ | 27/32 [00:03<00:00,  7.25it/s]loading complexes:  88%|████████▊ | 28/32 [00:03<00:00,  6.78it/s]loading complexes:  91%|█████████ | 29/32 [00:03<00:00,  6.12it/s]loading complexes:  97%|█████████▋| 31/32 [00:04<00:00,  6.81it/s]loading complexes: 100%|██████████| 32/32 [00:04<00:00,  7.09it/s]loading complexes: 100%|██████████| 32/32 [00:04<00:00,  7.49it/s]
+Traceback (most recent call last):
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/screening_airi.py", line 197, in <module>
+    randomize_position(
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/utils/sampling.py", line 23, in randomize_position
+    modify_conformer_torsion_angles(complex_graph['ligand'].pos,
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/utils/torsion.py", line 232, in modify_conformer_torsion_angles
+    pos[mask_rotate[idx_edge]] = (pos[mask_rotate[idx_edge]] - pos[v]) @ rot_mat.T + pos[v]
+IndexError: boolean index did not match indexed array along dimension 0; dimension is 961 but corresponding boolean dimension is 24
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.63it/s]parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.63it/s]
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]loading complexes:   6%|▋         | 2/32 [00:00<00:03,  7.92it/s]loading complexes:  12%|█▎        | 4/32 [00:00<00:03,  7.64it/s]loading complexes:  19%|█▉        | 6/32 [00:00<00:02,  9.22it/s]loading complexes:  25%|██▌       | 8/32 [00:00<00:02,  9.40it/s]loading complexes:  31%|███▏      | 10/32 [00:01<00:02, 10.47it/s]loading complexes:  38%|███▊      | 12/32 [00:01<00:02,  8.32it/s]loading complexes:  41%|████      | 13/32 [00:01<00:02,  6.33it/s]loading complexes:  47%|████▋     | 15/32 [00:02<00:02,  5.96it/s]loading complexes:  50%|█████     | 16/32 [00:02<00:02,  5.64it/s]loading complexes:  56%|█████▋    | 18/32 [00:02<00:02,  6.52it/s]loading complexes:  59%|█████▉    | 19/32 [00:02<00:01,  6.75it/s]loading complexes:  69%|██████▉   | 22/32 [00:02<00:01,  9.47it/s]loading complexes:  75%|███████▌  | 24/32 [00:03<00:00,  8.14it/s]loading complexes:  78%|███████▊  | 25/32 [00:03<00:00,  8.27it/s]loading complexes:  81%|████████▏ | 26/32 [00:03<00:00,  7.82it/s]loading complexes:  84%|████████▍ | 27/32 [00:03<00:00,  7.08it/s]loading complexes:  88%|████████▊ | 28/32 [00:03<00:00,  6.63it/s]loading complexes:  91%|█████████ | 29/32 [00:03<00:00,  5.98it/s]loading complexes:  97%|█████████▋| 31/32 [00:04<00:00,  6.66it/s]loading complexes: 100%|██████████| 32/32 [00:04<00:00,  6.94it/s]loading complexes: 100%|██████████| 32/32 [00:04<00:00,  7.35it/s]
+Traceback (most recent call last):
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/screening_airi.py", line 197, in <module>
+    randomize_position(
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/utils/sampling.py", line 23, in randomize_position
+    modify_conformer_torsion_angles(complex_graph['ligand'].pos,
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/utils/torsion.py", line 232, in modify_conformer_torsion_angles
+    pos[mask_rotate[idx_edge]] = (pos[mask_rotate[idx_edge]] - pos[v]) @ rot_mat.T + pos[v]
+IndexError: boolean index did not match indexed array along dimension 0; dimension is 961 but corresponding boolean dimension is 24
+Traceback (most recent call last):
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/dynamicbind/../main_db_min.py", line 194, in <module>
+    main(args)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/dynamicbind/../main_db_min.py", line 169, in main
+    sac.train()
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/train/utils.py", line 19, in wrapper
+    res = method(sac, *args, **kwargs)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/train/sac.py", line 310, in train
+    rewards_info, update_info = self.train_epoch()
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/train/utils.py", line 19, in wrapper
+    res = method(sac, *args, **kwargs)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/train/sac.py", line 280, in train_epoch
+    rewards_info = self.collect_experience()
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/train/utils.py", line 19, in wrapper
+    res = method(sac, *args, **kwargs)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/train/sac.py", line 265, in collect_experience
+    rewards = self.compute_rewards(smiles)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/train/utils.py", line 19, in wrapper
+    res = method(sac, *args, **kwargs)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/train/sac.py", line 271, in compute_rewards
+    return self.env.reward_batch(smiles)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/env/environment.py", line 54, in reward_batch
+    objectives = dmap(methodcaller('__call__', smiles), self.rewards)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/utils.py", line 69, in dmap
+    return {k: f(v) for k, v in d.items()}
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/utils.py", line 69, in <dictcomp>
+    return {k: f(v) for k, v in d.items()}
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/env/reward.py", line 19, in __call__
+    property_values = self.property(input)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0902.py", line 32, in __call__
+    return self.run_inference(ligands_list, **self.config)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/DynamicBind/run_single_protein_inference_0902.py", line 134, in run_inference
+    df = pd.read_csv(file_path)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/pandas/util/_decorators.py", line 317, in wrapper
+    return func(*args, **kwargs)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1729, in _make_engine
+    self.handles = get_handle(
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/pandas/io/common.py", line 857, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/tank/scratch/okonovalova/freedpp/freedpp/dynamicbind/result_folder/main_db_42_32_32_b/affinity_prediction.csv'
