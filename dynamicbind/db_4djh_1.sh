@@ -7,6 +7,8 @@ python ../main_db_min.py \
             --starting_smile "c1([*:1])c([*:2])ccc([*:3])c1" \
 	    --fragmentation crem \
             --device 'cuda' \
+            --batch_size 32 \
+            --batch_size_db 32 \
             --device_num 2 \
 	    --n_conf 1 \
             --num_mols 1 \
@@ -20,11 +22,11 @@ python ../main_db_min.py \
             --hts \
             --weights "-1.0" \
             --objectives "DB" \
-            --name db_4djh_42_32_32_rew \
+            --name db_4djh_42_32_32_b \
             --proteinFile ../DynamicBind/data/4djh_cleaned.pdb \
             --savings_per_complex 1 \
             --inference_steps 20 \
-            --header main_db_42_32_32_rew \
+            --header main_db_42_32_32_b \
             --results result_folder \
             --python /nfs/home/okonovalova/anaconda3/envs/dynamicbind/bin/python \
             --relax_python /nfs/home/okonovalova/anaconda3/envs/relax/bin/python 
