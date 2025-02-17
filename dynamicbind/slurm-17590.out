@@ -1,0 +1,143 @@
+time 3.0994415283203125e-06
+DBAffinity <ffreed.env.dynamicbind.DBAffinity object at 0x7f5fb6849960>
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 29.70it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmp7q85un_9.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  1000
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_1000_200e
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.49it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.49it/s]
+
+loading complexes:   0%|          | 0/1000 [00:00<?, ?it/s]
+loading complexes:   1%|          | 8/1000 [00:00<00:13, 73.59it/s]
+loading complexes:   2%|▏         | 18/1000 [00:00<00:11, 84.58it/s]
+loading complexes:   3%|▎         | 27/1000 [00:00<00:12, 79.99it/s]
+loading complexes:   4%|▎         | 36/1000 [00:00<00:11, 83.13it/s]
+loading complexes:   5%|▍         | 46/1000 [00:00<00:10, 88.87it/s]
+loading complexes:   6%|▌         | 55/1000 [00:00<00:10, 88.32it/s]
+loading complexes:   6%|▋         | 65/1000 [00:00<00:10, 88.94it/s]
+loading complexes:   8%|▊         | 75/1000 [00:00<00:10, 90.77it/s]
+loading complexes:   8%|▊         | 85/1000 [00:00<00:10, 89.89it/s]
+loading complexes:  10%|▉         | 95/1000 [00:01<00:10, 89.55it/s]
+loading complexes:  10%|█         | 105/1000 [00:01<00:09, 89.89it/s]
+loading complexes:  11%|█▏        | 114/1000 [00:01<00:10, 88.54it/s]
+loading complexes:  12%|█▏        | 123/1000 [00:01<00:11, 77.45it/s]
+loading complexes:  13%|█▎        | 131/1000 [00:01<00:11, 76.18it/s]
+loading complexes:  14%|█▍        | 139/1000 [00:01<00:11, 76.49it/s]
+loading complexes:  15%|█▍        | 149/1000 [00:01<00:10, 81.14it/s]
+loading complexes:  16%|█▌        | 158/1000 [00:01<00:10, 83.55it/s]
+loading complexes:  17%|█▋        | 168/1000 [00:01<00:09, 85.48it/s]
+loading complexes:  18%|█▊        | 177/1000 [00:02<00:09, 86.09it/s]
+loading complexes:  19%|█▊        | 186/1000 [00:02<00:09, 86.46it/s]
+loading complexes:  20%|█▉        | 195/1000 [00:02<00:09, 85.95it/s]
+loading complexes:  20%|██        | 204/1000 [00:02<00:09, 86.92it/s]
+loading complexes:  21%|██▏       | 214/1000 [00:02<00:09, 86.00it/s]
+loading complexes:  22%|██▏       | 224/1000 [00:02<00:08, 88.95it/s]
+loading complexes:  23%|██▎       | 234/1000 [00:02<00:08, 89.63it/s]
+loading complexes:  24%|██▍       | 243/1000 [00:02<00:10, 74.59it/s]
+loading complexes:  25%|██▌       | 252/1000 [00:03<00:09, 78.11it/s]
+loading complexes:  26%|██▌       | 262/1000 [00:03<00:08, 82.87it/s]
+loading complexes:  27%|██▋       | 271/1000 [00:03<00:08, 83.67it/s]
+loading complexes:  28%|██▊       | 280/1000 [00:03<00:08, 85.26it/s]
+loading complexes:  29%|██▉       | 290/1000 [00:03<00:07, 88.85it/s]
+loading complexes:  30%|███       | 300/1000 [00:03<00:07, 90.40it/s]
+loading complexes:  31%|███       | 310/1000 [00:03<00:07, 89.25it/s]
+loading complexes:  32%|███▏      | 319/1000 [00:03<00:07, 86.66it/s]
+loading complexes:  33%|███▎      | 328/1000 [00:03<00:07, 85.07it/s]
+loading complexes:  34%|███▎      | 337/1000 [00:03<00:07, 85.12it/s]
+loading complexes:  35%|███▍      | 346/1000 [00:04<00:07, 86.35it/s]
+loading complexes:  36%|███▌      | 355/1000 [00:04<00:07, 86.35it/s]
+loading complexes:  36%|███▋      | 364/1000 [00:04<00:08, 78.56it/s]
+loading complexes:  37%|███▋      | 374/1000 [00:04<00:07, 83.84it/s]
+loading complexes:  38%|███▊      | 384/1000 [00:04<00:07, 86.30it/s]
+loading complexes:  39%|███▉      | 393/1000 [00:04<00:06, 87.31it/s]
+loading complexes:  40%|████      | 402/1000 [00:04<00:07, 76.02it/s]
+loading complexes:  41%|████      | 411/1000 [00:04<00:07, 78.35it/s]
+loading complexes:  42%|████▏     | 421/1000 [00:04<00:07, 82.47it/s]
+loading complexes:  43%|████▎     | 431/1000 [00:05<00:06, 85.64it/s]
+loading complexes:  44%|████▍     | 440/1000 [00:05<00:06, 83.13it/s]
+loading complexes:  45%|████▍     | 449/1000 [00:05<00:07, 75.95it/s]
+loading complexes:  46%|████▌     | 459/1000 [00:05<00:06, 80.56it/s]
+loading complexes:  47%|████▋     | 469/1000 [00:05<00:06, 83.71it/s]
+loading complexes:  48%|████▊     | 478/1000 [00:05<00:06, 84.89it/s]
+loading complexes:  49%|████▉     | 488/1000 [00:05<00:05, 88.17it/s]
+loading complexes:  50%|████▉     | 498/1000 [00:05<00:05, 89.37it/s]
+loading complexes:  51%|█████     | 508/1000 [00:06<00:05, 86.61it/s]
+loading complexes:  52%|█████▏    | 517/1000 [00:06<00:06, 79.66it/s]
+loading complexes:  53%|█████▎    | 526/1000 [00:06<00:05, 80.55it/s]
+loading complexes:  54%|█████▎    | 535/1000 [00:06<00:05, 79.52it/s]
+loading complexes:  54%|█████▍    | 544/1000 [00:06<00:05, 80.83it/s]
+loading complexes:  55%|█████▌    | 553/1000 [00:06<00:05, 81.18it/s]
+loading complexes:  56%|█████▋    | 563/1000 [00:06<00:05, 84.71it/s]
+loading complexes:  57%|█████▋    | 572/1000 [00:06<00:05, 84.63it/s]
+loading complexes:  58%|█████▊    | 581/1000 [00:06<00:04, 84.44it/s]
+loading complexes:  59%|█████▉    | 590/1000 [00:07<00:04, 84.28it/s]
+loading complexes:  60%|██████    | 600/1000 [00:07<00:04, 87.22it/s]
+loading complexes:  61%|██████    | 609/1000 [00:07<00:04, 87.29it/s]
+loading complexes:  62%|██████▏   | 619/1000 [00:07<00:04, 88.87it/s]
+loading complexes:  63%|██████▎   | 628/1000 [00:07<00:04, 88.23it/s]
+loading complexes:  64%|██████▎   | 637/1000 [00:07<00:04, 87.28it/s]
+loading complexes:  65%|██████▍   | 646/1000 [00:07<00:04, 85.60it/s]
+loading complexes:  66%|██████▌   | 656/1000 [00:07<00:03, 88.20it/s]
+loading complexes:  66%|██████▋   | 665/1000 [00:07<00:03, 86.40it/s]
+loading complexes:  68%|██████▊   | 675/1000 [00:07<00:03, 87.66it/s]
+loading complexes:  68%|██████▊   | 685/1000 [00:08<00:03, 90.24it/s]
+loading complexes:  70%|██████▉   | 695/1000 [00:08<00:03, 89.56it/s]
+loading complexes:  70%|███████   | 705/1000 [00:08<00:03, 90.41it/s]
+loading complexes:  72%|███████▏  | 715/1000 [00:08<00:03, 82.46it/s]
+loading complexes:  72%|███████▏  | 724/1000 [00:08<00:03, 84.10it/s]
+loading complexes:  73%|███████▎  | 733/1000 [00:08<00:03, 83.08it/s]
+loading complexes:  74%|███████▍  | 742/1000 [00:08<00:03, 84.27it/s]
+loading complexes:  75%|███████▌  | 752/1000 [00:08<00:02, 86.55it/s]
+loading complexes:  76%|███████▌  | 761/1000 [00:09<00:03, 67.48it/s]
+loading complexes:  77%|███████▋  | 771/1000 [00:09<00:03, 72.96it/s]
+loading complexes:  78%|███████▊  | 781/1000 [00:09<00:02, 78.11it/s]
+loading complexes:  79%|███████▉  | 790/1000 [00:09<00:02, 79.91it/s]
+loading complexes:  80%|███████▉  | 799/1000 [00:09<00:02, 81.77it/s]
+loading complexes:  81%|████████  | 809/1000 [00:09<00:02, 84.16it/s]
+loading complexes:  82%|████████▏ | 818/1000 [00:09<00:02, 85.39it/s]
+loading complexes:  83%|████████▎ | 828/1000 [00:09<00:01, 88.18it/s]
+loading complexes:  84%|████████▍ | 838/1000 [00:09<00:01, 89.84it/s]
+loading complexes:  85%|████████▍ | 848/1000 [00:10<00:01, 90.87it/s]
+loading complexes:  86%|████████▌ | 858/1000 [00:10<00:01, 92.79it/s]
+loading complexes:  87%|████████▋ | 868/1000 [00:10<00:01, 94.13it/s]
+loading complexes:  88%|████████▊ | 878/1000 [00:10<00:01, 89.83it/s]
+loading complexes:  89%|████████▉ | 888/1000 [00:10<00:01, 90.09it/s]
+loading complexes:  90%|████████▉ | 898/1000 [00:10<00:01, 89.73it/s]
+loading complexes:  91%|█████████ | 908/1000 [00:10<00:01, 88.61it/s]
+loading complexes:  92%|█████████▏| 917/1000 [00:10<00:00, 86.02it/s]
+loading complexes:  93%|█████████▎| 927/1000 [00:10<00:00, 88.67it/s]
+loading complexes:  94%|█████████▎| 936/1000 [00:11<00:00, 87.31it/s]
+loading complexes:  95%|█████████▍| 946/1000 [00:11<00:00, 88.56it/s]
+loading complexes:  96%|█████████▌| 956/1000 [00:11<00:00, 90.37it/s]
+loading complexes:  97%|█████████▋| 966/1000 [00:11<00:00, 90.79it/s]
+loading complexes:  98%|█████████▊| 976/1000 [00:11<00:00, 91.47it/s]
+loading complexes:  99%|█████████▊| 986/1000 [00:11<00:00, 78.02it/s]
+loading complexes: 100%|█████████▉| 995/1000 [00:11<00:00, 77.94it/s]
+loading complexes: 100%|██████████| 1000/1000 [00:11<00:00, 84.38it/s]
+

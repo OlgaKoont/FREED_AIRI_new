@@ -1,0 +1,59 @@
+time 3.814697265625e-06
+DBAffinity <ffreed.env.dynamicbind.DBAffinity object at 0x7fa057f4b640>
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 29.48it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmpk2i52yj3.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  32
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_1402_32
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.42it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.42it/s]
+
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]
+loading complexes:   6%|▋         | 2/32 [00:00<00:03,  7.53it/s]
+loading complexes:  12%|█▎        | 4/32 [00:00<00:04,  6.93it/s]
+loading complexes:  19%|█▉        | 6/32 [00:00<00:03,  8.26it/s]
+loading complexes:  25%|██▌       | 8/32 [00:00<00:02,  8.35it/s]
+loading complexes:  31%|███▏      | 10/32 [00:01<00:02,  9.32it/s]
+loading complexes:  38%|███▊      | 12/32 [00:01<00:02,  7.31it/s]
+loading complexes:  41%|████      | 13/32 [00:01<00:03,  5.54it/s]
+loading complexes:  44%|████▍     | 14/32 [00:02<00:02,  6.09it/s]
+loading complexes:  47%|████▋     | 15/32 [00:02<00:03,  4.94it/s]
+loading complexes:  50%|█████     | 16/32 [00:02<00:03,  4.69it/s]
+loading complexes:  56%|█████▋    | 18/32 [00:02<00:02,  5.61it/s]
+loading complexes:  59%|█████▉    | 19/32 [00:02<00:02,  5.87it/s]
+loading complexes:  69%|██████▉   | 22/32 [00:03<00:01,  8.48it/s]
+loading complexes:  72%|███████▏  | 23/32 [00:03<00:01,  7.23it/s]
+loading complexes:  78%|███████▊  | 25/32 [00:03<00:00,  7.92it/s]
+loading complexes:  81%|████████▏ | 26/32 [00:03<00:00,  7.60it/s]
+loading complexes:  84%|████████▍ | 27/32 [00:03<00:00,  7.00it/s]
+loading complexes:  88%|████████▊ | 28/32 [00:04<00:00,  6.61it/s]
+loading complexes:  91%|█████████ | 29/32 [00:04<00:00,  6.00it/s]
+loading complexes:  97%|█████████▋| 31/32 [00:04<00:00,  6.68it/s]
+loading complexes: 100%|██████████| 32/32 [00:04<00:00,  6.96it/s]
+loading complexes: 100%|██████████| 32/32 [00:04<00:00,  6.78it/s]
+

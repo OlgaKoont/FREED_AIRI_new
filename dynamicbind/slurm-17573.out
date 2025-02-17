@@ -1,0 +1,94 @@
+time 3.337860107421875e-06
+DBAffinity <ffreed.env.dynamicbind.DBAffinity object at 0x7f1e36ccb640>
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 29.28it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmpdww1c00g.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  64
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.40it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.40it/s]
+
+loading complexes:   0%|          | 0/64 [00:00<?, ?it/s]
+loading complexes:   3%|▎         | 2/64 [00:00<00:07,  8.12it/s]
+loading complexes:   6%|▋         | 4/64 [00:00<00:07,  7.84it/s]
+loading complexes:   9%|▉         | 6/64 [00:00<00:06,  9.44it/s]
+loading complexes:  12%|█▎        | 8/64 [00:00<00:05,  9.62it/s]
+loading complexes:  16%|█▌        | 10/64 [00:01<00:05, 10.79it/s]
+loading complexes:  19%|█▉        | 12/64 [00:01<00:06,  8.23it/s]
+loading complexes:  20%|██        | 13/64 [00:01<00:08,  6.30it/s]
+loading complexes:  23%|██▎       | 15/64 [00:02<00:08,  5.96it/s]
+loading complexes:  25%|██▌       | 16/64 [00:02<00:08,  5.65it/s]
+loading complexes:  28%|██▊       | 18/64 [00:02<00:07,  6.54it/s]
+loading complexes:  30%|██▉       | 19/64 [00:02<00:06,  6.78it/s]
+loading complexes:  34%|███▍      | 22/64 [00:02<00:04,  9.56it/s]
+loading complexes:  38%|███▊      | 24/64 [00:03<00:04,  8.13it/s]
+loading complexes:  39%|███▉      | 25/64 [00:03<00:04,  8.22it/s]
+loading complexes:  41%|████      | 26/64 [00:03<00:04,  7.82it/s]
+loading complexes:  42%|████▏     | 27/64 [00:03<00:05,  7.15it/s]
+loading complexes:  44%|████▍     | 28/64 [00:03<00:05,  6.71it/s]
+loading complexes:  45%|████▌     | 29/64 [00:03<00:05,  6.09it/s]
+loading complexes:  48%|████▊     | 31/64 [00:04<00:04,  6.79it/s]
+loading complexes:  50%|█████     | 32/64 [00:04<00:04,  7.09it/s]
+loading complexes:  52%|█████▏    | 33/64 [00:04<00:04,  7.15it/s]
+loading complexes:  53%|█████▎    | 34/64 [00:04<00:04,  7.30it/s]
+loading complexes:  56%|█████▋    | 36/64 [00:04<00:02,  9.43it/s]
+loading complexes:  59%|█████▉    | 38/64 [00:04<00:02, 11.75it/s]
+loading complexes:  62%|██████▎   | 40/64 [00:05<00:02,  9.16it/s]
+loading complexes:  66%|██████▌   | 42/64 [00:05<00:02, 10.29it/s]
+loading complexes:  69%|██████▉   | 44/64 [00:05<00:01, 11.12it/s]
+loading complexes:  72%|███████▏  | 46/64 [00:05<00:02,  8.72it/s]
+loading complexes:  75%|███████▌  | 48/64 [00:05<00:01,  9.33it/s]
+loading complexes:  78%|███████▊  | 50/64 [00:06<00:01, 10.90it/s]
+loading complexes:  81%|████████▏ | 52/64 [00:06<00:01, 10.96it/s]
+loading complexes:  84%|████████▍ | 54/64 [00:06<00:01,  6.55it/s]
+loading complexes:  88%|████████▊ | 56/64 [00:06<00:01,  7.50it/s]
+loading complexes:  91%|█████████ | 58/64 [00:07<00:00,  8.98it/s]
+loading complexes:  94%|█████████▍| 60/64 [00:07<00:00,  9.78it/s]
+loading complexes:  97%|█████████▋| 62/64 [00:07<00:00, 10.00it/s]
+loading complexes: 100%|██████████| 64/64 [00:07<00:00,  9.39it/s]
+loading complexes: 100%|██████████| 64/64 [00:07<00:00,  8.31it/s]
+Traceback (most recent call last):
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/screening_airi.py", line 213, in <module>
+    outputs = sampling(data_list=batch,
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/datasets/utils/sampling.py", line 129, in sampling
+    lddt_pred, affinity_pred, tr_score, rot_score, tor_score, res_tr_score, res_rot_score, res_chi_score = model(complex_graph_batch)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/models/score_model.py", line 310, in forward
+    lig_inter_update = self.rec_to_lig_conv_layers[l](rec_node_attr, cross_edge_index, rec_to_lig_edge_attr_, cross_edge_sh,
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/models/score_model.py", line 82, in forward
+    tp = self.tp(node_attr[edge_dst], edge_sh, self.fc(edge_attr))
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 23.34 GiB (GPU 0; 47.53 GiB total capacity; 3.63 GiB already allocated; 20.79 GiB free; 19.21 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+

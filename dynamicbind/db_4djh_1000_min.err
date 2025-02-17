@@ -1,0 +1,21 @@
+/mnt/tank/scratch/okonovalova/moses/moses/metrics/utils.py:24: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  _mcf.append(_pains, sort=True)['smarts'].values]
+Traceback (most recent call last):
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/dynamicbind/../ffreed/main.py", line 192, in <module>
+    main(args)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/dynamicbind/../ffreed/main.py", line 174, in main
+    evaluate(args, epoch, env)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/dynamicbind/../ffreed/main.py", line 45, in evaluate
+    log_info(os.path.join(args['mols_dir'], f'sample_{suffix}.csv'), {'Smiles': mols, **rewards}, epoch, additional_info=None, writer=None)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/train/utils.py", line 52, in log_info
+    df = pd.DataFrame(rewards_info)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/pandas/core/frame.py", line 663, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/pandas/core/internals/construction.py", line 494, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/pandas/core/internals/construction.py", line 119, in arrays_to_mgr
+    index = _extract_index(arrays)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/pandas/core/internals/construction.py", line 667, in _extract_index
+    raise ValueError("All arrays must be of the same length")
+ValueError: All arrays must be of the same length
+/var/spool/slurmd/job17598/slurm_script: 27: --checkpoint: not found

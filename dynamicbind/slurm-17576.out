@@ -1,0 +1,863 @@
+time 3.337860107421875e-06
+DBAffinity <ffreed.env.dynamicbind.DBAffinity object at 0x7fd49ff99960>
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 28.20it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmpmxhcxyld.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  32
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.00it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.00it/s]
+
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]
+loading complexes:   6%|▋         | 2/32 [00:00<00:04,  7.32it/s]
+loading complexes:  12%|█▎        | 4/32 [00:00<00:03,  7.35it/s]
+loading complexes:  19%|█▉        | 6/32 [00:00<00:02,  8.97it/s]
+loading complexes:  25%|██▌       | 8/32 [00:00<00:02,  9.25it/s]
+loading complexes:  31%|███▏      | 10/32 [00:01<00:02, 10.44it/s]
+loading complexes:  38%|███▊      | 12/32 [00:01<00:02,  8.28it/s]
+loading complexes:  41%|████      | 13/32 [00:01<00:03,  6.32it/s]
+loading complexes:  47%|████▋     | 15/32 [00:02<00:02,  5.96it/s]
+loading complexes:  50%|█████     | 16/32 [00:02<00:02,  5.65it/s]
+loading complexes:  56%|█████▋    | 18/32 [00:02<00:02,  6.40it/s]
+loading complexes:  59%|█████▉    | 19/32 [00:02<00:01,  6.58it/s]
+loading complexes:  69%|██████▉   | 22/32 [00:02<00:01,  9.26it/s]
+loading complexes:  75%|███████▌  | 24/32 [00:03<00:00,  8.01it/s]
+loading complexes:  78%|███████▊  | 25/32 [00:03<00:00,  8.13it/s]
+loading complexes:  81%|████████▏ | 26/32 [00:03<00:00,  7.68it/s]
+loading complexes:  84%|████████▍ | 27/32 [00:03<00:00,  7.00it/s]
+loading complexes:  88%|████████▊ | 28/32 [00:03<00:00,  6.59it/s]
+loading complexes:  91%|█████████ | 29/32 [00:04<00:00,  5.99it/s]
+loading complexes:  97%|█████████▋| 31/32 [00:04<00:00,  6.69it/s]
+loading complexes: 100%|██████████| 32/32 [00:04<00:00,  6.98it/s]
+loading complexes: 100%|██████████| 32/32 [00:04<00:00,  7.28it/s]
+Traceback (most recent call last):
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/screening_airi.py", line 213, in <module>
+    outputs = sampling(data_list=batch,
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/datasets/utils/sampling.py", line 129, in sampling
+    lddt_pred, affinity_pred, tr_score, rot_score, tor_score, res_tr_score, res_rot_score, res_chi_score = model(complex_graph_batch)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/models/score_model.py", line 307, in forward
+    lig_inter_update = self.rec_to_lig_conv_layers[l](torch.cat([rec_node_attr,n_norm_vec,c_norm_vec],dim=-1), cross_edge_index, rec_to_lig_edge_attr_, cross_edge_sh,
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/models/score_model.py", line 82, in forward
+    tp = self.tp(node_attr[edge_dst], edge_sh, self.fc(edge_attr))
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 8.78 GiB (GPU 0; 47.53 GiB total capacity; 1.30 GiB already allocated; 6.87 GiB free; 1.65 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 28.83it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmptmmyr3sg.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  33
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_100e
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.27it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.27it/s]
+
+loading complexes:   0%|          | 0/33 [00:00<?, ?it/s]
+loading complexes:   6%|▌         | 2/33 [00:00<00:01, 16.49it/s]
+loading complexes:  12%|█▏        | 4/33 [00:00<00:02, 11.90it/s]
+loading complexes:  18%|█▊        | 6/33 [00:00<00:02, 12.36it/s]
+loading complexes:  24%|██▍       | 8/33 [00:00<00:02, 12.27it/s]
+loading complexes:  33%|███▎      | 11/33 [00:00<00:01, 13.76it/s]
+loading complexes:  39%|███▉      | 13/33 [00:01<00:01, 13.02it/s]
+loading complexes:  45%|████▌     | 15/33 [00:01<00:01, 11.24it/s]
+loading complexes:  52%|█████▏    | 17/33 [00:01<00:01,  9.67it/s]
+loading complexes:  58%|█████▊    | 19/33 [00:01<00:01, 10.98it/s]
+loading complexes:  64%|██████▎   | 21/33 [00:01<00:01, 10.43it/s]
+loading complexes:  70%|██████▉   | 23/33 [00:02<00:01,  8.41it/s]
+loading complexes:  79%|███████▉  | 26/33 [00:02<00:00, 10.20it/s]
+loading complexes:  85%|████████▍ | 28/33 [00:02<00:00,  9.44it/s]
+loading complexes:  91%|█████████ | 30/33 [00:02<00:00, 10.56it/s]
+loading complexes:  97%|█████████▋| 32/33 [00:02<00:00, 11.06it/s]
+loading complexes: 100%|██████████| 33/33 [00:03<00:00, 10.80it/s]
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 29.78it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmpuw3ajve1.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  32
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_100e
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.28it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.28it/s]
+
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]
+loading complexes:   6%|▋         | 2/32 [00:00<00:02, 13.63it/s]
+loading complexes:  12%|█▎        | 4/32 [00:00<00:02, 13.61it/s]
+loading complexes:  19%|█▉        | 6/32 [00:00<00:01, 13.26it/s]
+loading complexes:  25%|██▌       | 8/32 [00:00<00:01, 13.68it/s]
+loading complexes:  31%|███▏      | 10/32 [00:00<00:01, 12.76it/s]
+loading complexes:  38%|███▊      | 12/32 [00:00<00:01, 13.54it/s]
+loading complexes:  44%|████▍     | 14/32 [00:01<00:01, 12.83it/s]
+loading complexes:  50%|█████     | 16/32 [00:01<00:01, 10.19it/s]
+loading complexes:  59%|█████▉    | 19/32 [00:01<00:00, 13.73it/s]
+loading complexes:  66%|██████▌   | 21/32 [00:01<00:00, 12.78it/s]
+loading complexes:  72%|███████▏  | 23/32 [00:01<00:00, 11.63it/s]
+loading complexes:  78%|███████▊  | 25/32 [00:02<00:00,  8.48it/s]
+loading complexes:  84%|████████▍ | 27/32 [00:02<00:00,  9.70it/s]
+loading complexes:  94%|█████████▍| 30/32 [00:02<00:00, 12.13it/s]
+loading complexes: 100%|██████████| 32/32 [00:02<00:00, 12.45it/s]
+loading complexes: 100%|██████████| 32/32 [00:02<00:00, 11.95it/s]
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 29.15it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmpfdzzbked.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  32
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_100e
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.40it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.40it/s]
+
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]
+loading complexes:   3%|▎         | 1/32 [00:00<00:04,  7.13it/s]
+loading complexes:   9%|▉         | 3/32 [00:00<00:02, 10.22it/s]
+loading complexes:  16%|█▌        | 5/32 [00:00<00:03,  8.76it/s]
+loading complexes:  22%|██▏       | 7/32 [00:00<00:02,  9.93it/s]
+loading complexes:  28%|██▊       | 9/32 [00:00<00:02, 10.30it/s]
+loading complexes:  34%|███▍      | 11/32 [00:01<00:02,  8.63it/s]
+loading complexes:  41%|████      | 13/32 [00:01<00:02,  9.38it/s]
+loading complexes:  44%|████▍     | 14/32 [00:01<00:01,  9.45it/s]
+loading complexes:  50%|█████     | 16/32 [00:01<00:01,  9.86it/s]
+loading complexes:  56%|█████▋    | 18/32 [00:01<00:01,  8.74it/s]
+loading complexes:  59%|█████▉    | 19/32 [00:02<00:01,  7.58it/s]
+loading complexes:  62%|██████▎   | 20/32 [00:02<00:01,  6.80it/s]
+loading complexes:  72%|███████▏  | 23/32 [00:02<00:00,  9.78it/s]
+loading complexes:  78%|███████▊  | 25/32 [00:02<00:00, 10.89it/s]
+loading complexes:  84%|████████▍ | 27/32 [00:02<00:00, 11.51it/s]
+loading complexes:  91%|█████████ | 29/32 [00:02<00:00, 12.11it/s]
+loading complexes:  97%|█████████▋| 31/32 [00:03<00:00, 13.10it/s]
+loading complexes: 100%|██████████| 32/32 [00:03<00:00, 10.28it/s]
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 29.18it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmpbevdxcjo.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  32
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_100e
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.40it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.40it/s]
+
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]
+loading complexes:   3%|▎         | 1/32 [00:00<00:04,  7.66it/s]
+loading complexes:   6%|▋         | 2/32 [00:00<00:05,  5.69it/s]
+loading complexes:  12%|█▎        | 4/32 [00:00<00:03,  7.23it/s]
+loading complexes:  16%|█▌        | 5/32 [00:00<00:03,  7.67it/s]
+loading complexes:  22%|██▏       | 7/32 [00:00<00:02,  9.93it/s]
+loading complexes:  28%|██▊       | 9/32 [00:00<00:02, 10.70it/s]
+loading complexes:  34%|███▍      | 11/32 [00:01<00:01, 10.86it/s]
+loading complexes:  41%|████      | 13/32 [00:01<00:02,  9.20it/s]
+loading complexes:  47%|████▋     | 15/32 [00:01<00:01, 10.46it/s]
+loading complexes:  53%|█████▎    | 17/32 [00:01<00:01,  9.67it/s]
+loading complexes:  59%|█████▉    | 19/32 [00:02<00:01, 10.06it/s]
+loading complexes:  66%|██████▌   | 21/32 [00:02<00:00, 11.83it/s]
+loading complexes:  72%|███████▏  | 23/32 [00:02<00:00, 11.08it/s]
+loading complexes:  78%|███████▊  | 25/32 [00:02<00:00, 10.38it/s]
+loading complexes:  84%|████████▍ | 27/32 [00:02<00:00, 10.68it/s]
+loading complexes:  91%|█████████ | 29/32 [00:02<00:00,  9.85it/s]
+loading complexes:  97%|█████████▋| 31/32 [00:03<00:00,  9.19it/s]
+loading complexes: 100%|██████████| 32/32 [00:03<00:00,  8.53it/s]
+loading complexes: 100%|██████████| 32/32 [00:03<00:00,  9.54it/s]
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 29.44it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmpxu5ir3py.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  32
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_100e
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.36it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.36it/s]
+
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]
+loading complexes:   3%|▎         | 1/32 [00:00<00:03,  9.08it/s]
+loading complexes:   9%|▉         | 3/32 [00:00<00:02, 12.62it/s]
+loading complexes:  16%|█▌        | 5/32 [00:00<00:02,  9.81it/s]
+loading complexes:  22%|██▏       | 7/32 [00:00<00:03,  7.92it/s]
+loading complexes:  28%|██▊       | 9/32 [00:00<00:02,  9.15it/s]
+loading complexes:  34%|███▍      | 11/32 [00:01<00:02,  9.35it/s]
+loading complexes:  41%|████      | 13/32 [00:01<00:01, 10.70it/s]
+loading complexes:  47%|████▋     | 15/32 [00:01<00:01,  9.22it/s]
+loading complexes:  53%|█████▎    | 17/32 [00:01<00:01,  9.28it/s]
+loading complexes:  56%|█████▋    | 18/32 [00:01<00:01,  8.09it/s]
+loading complexes:  62%|██████▎   | 20/32 [00:02<00:01,  9.62it/s]
+loading complexes:  69%|██████▉   | 22/32 [00:02<00:00, 10.14it/s]
+loading complexes:  75%|███████▌  | 24/32 [00:02<00:00,  9.23it/s]
+loading complexes:  81%|████████▏ | 26/32 [00:02<00:00,  8.87it/s]
+loading complexes:  84%|████████▍ | 27/32 [00:02<00:00,  8.66it/s]
+loading complexes:  91%|█████████ | 29/32 [00:03<00:00,  9.06it/s]
+loading complexes:  94%|█████████▍| 30/32 [00:03<00:00,  8.21it/s]
+loading complexes:  97%|█████████▋| 31/32 [00:03<00:00,  8.05it/s]
+loading complexes: 100%|██████████| 32/32 [00:03<00:00,  7.43it/s]
+loading complexes: 100%|██████████| 32/32 [00:03<00:00,  8.87it/s]
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 26.29it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmp4zxqfqrj.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  32
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_100e
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.39it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.39it/s]
+
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]
+loading complexes:   3%|▎         | 1/32 [00:00<00:04,  7.06it/s]
+loading complexes:   6%|▋         | 2/32 [00:00<00:05,  5.08it/s]
+loading complexes:   9%|▉         | 3/32 [00:00<00:04,  6.31it/s]
+loading complexes:  16%|█▌        | 5/32 [00:00<00:02,  9.77it/s]
+loading complexes:  22%|██▏       | 7/32 [00:00<00:02,  9.95it/s]
+loading complexes:  28%|██▊       | 9/32 [00:01<00:03,  7.55it/s]
+loading complexes:  34%|███▍      | 11/32 [00:01<00:02,  8.52it/s]
+loading complexes:  41%|████      | 13/32 [00:01<00:01,  9.75it/s]
+loading complexes:  47%|████▋     | 15/32 [00:01<00:01,  9.77it/s]
+loading complexes:  53%|█████▎    | 17/32 [00:01<00:01, 10.28it/s]
+loading complexes:  59%|█████▉    | 19/32 [00:02<00:01,  9.05it/s]
+loading complexes:  66%|██████▌   | 21/32 [00:02<00:01, 10.16it/s]
+loading complexes:  72%|███████▏  | 23/32 [00:02<00:00,  9.01it/s]
+loading complexes:  75%|███████▌  | 24/32 [00:02<00:01,  7.97it/s]
+loading complexes:  78%|███████▊  | 25/32 [00:02<00:00,  7.75it/s]
+loading complexes:  81%|████████▏ | 26/32 [00:03<00:00,  7.55it/s]
+loading complexes:  84%|████████▍ | 27/32 [00:03<00:00,  7.52it/s]
+loading complexes:  91%|█████████ | 29/32 [00:03<00:00,  8.30it/s]
+loading complexes:  94%|█████████▍| 30/32 [00:03<00:00,  8.01it/s]
+loading complexes: 100%|██████████| 32/32 [00:03<00:00,  9.03it/s]
+loading complexes: 100%|██████████| 32/32 [00:03<00:00,  8.62it/s]
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 29.28it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmp9hu4hbu3.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  32
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_100e
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.33it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.33it/s]
+
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]
+loading complexes:   6%|▋         | 2/32 [00:00<00:03,  8.43it/s]
+loading complexes:  12%|█▎        | 4/32 [00:00<00:03,  8.82it/s]
+loading complexes:  19%|█▉        | 6/32 [00:00<00:02, 10.71it/s]
+loading complexes:  25%|██▌       | 8/32 [00:00<00:02, 11.67it/s]
+loading complexes:  31%|███▏      | 10/32 [00:00<00:01, 11.03it/s]
+loading complexes:  41%|████      | 13/32 [00:01<00:01, 13.95it/s]
+loading complexes:  47%|████▋     | 15/32 [00:01<00:01, 11.33it/s]
+loading complexes:  53%|█████▎    | 17/32 [00:01<00:01, 10.88it/s]
+loading complexes:  59%|█████▉    | 19/32 [00:01<00:01, 10.03it/s]
+loading complexes:  66%|██████▌   | 21/32 [00:01<00:01,  9.99it/s]
+loading complexes:  72%|███████▏  | 23/32 [00:02<00:00, 10.64it/s]
+loading complexes:  81%|████████▏ | 26/32 [00:02<00:00, 13.35it/s]
+loading complexes:  88%|████████▊ | 28/32 [00:02<00:00, 12.04it/s]
+loading complexes:  94%|█████████▍| 30/32 [00:02<00:00, 12.32it/s]
+loading complexes: 100%|██████████| 32/32 [00:02<00:00, 11.62it/s]
+loading complexes: 100%|██████████| 32/32 [00:02<00:00, 11.29it/s]
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 26.15it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmpg7b0govw.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  32
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.21it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.21it/s]
+
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]
+loading complexes:   3%|▎         | 1/32 [00:00<00:03,  8.48it/s]
+loading complexes:   9%|▉         | 3/32 [00:00<00:01, 14.52it/s]
+loading complexes:  16%|█▌        | 5/32 [00:00<00:01, 15.20it/s]
+loading complexes:  22%|██▏       | 7/32 [00:00<00:01, 13.00it/s]
+loading complexes:  28%|██▊       | 9/32 [00:00<00:01, 13.23it/s]
+loading complexes:  34%|███▍      | 11/32 [00:00<00:01, 12.76it/s]
+loading complexes:  41%|████      | 13/32 [00:00<00:01, 14.28it/s]
+loading complexes:  47%|████▋     | 15/32 [00:01<00:01, 14.81it/s]
+loading complexes:  53%|█████▎    | 17/32 [00:01<00:01, 13.77it/s]
+loading complexes:  59%|█████▉    | 19/32 [00:01<00:00, 14.51it/s]
+loading complexes:  69%|██████▉   | 22/32 [00:01<00:00, 14.81it/s]
+loading complexes:  75%|███████▌  | 24/32 [00:01<00:00, 13.14it/s]
+loading complexes:  81%|████████▏ | 26/32 [00:02<00:00,  9.61it/s]
+loading complexes:  88%|████████▊ | 28/32 [00:02<00:00, 10.63it/s]
+loading complexes:  94%|█████████▍| 30/32 [00:02<00:00,  9.93it/s]
+loading complexes: 100%|██████████| 32/32 [00:02<00:00, 10.39it/s]
+loading complexes: 100%|██████████| 32/32 [00:02<00:00, 12.07it/s]
+Traceback (most recent call last):
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/screening_airi.py", line 213, in <module>
+    outputs = sampling(data_list=batch,
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/datasets/utils/sampling.py", line 129, in sampling
+    lddt_pred, affinity_pred, tr_score, rot_score, tor_score, res_tr_score, res_rot_score, res_chi_score = model(complex_graph_batch)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/models/score_model.py", line 307, in forward
+    lig_inter_update = self.rec_to_lig_conv_layers[l](torch.cat([rec_node_attr,n_norm_vec,c_norm_vec],dim=-1), cross_edge_index, rec_to_lig_edge_attr_, cross_edge_sh,
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/models/score_model.py", line 82, in forward
+    tp = self.tp(node_attr[edge_dst], edge_sh, self.fc(edge_attr))
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 7.84 GiB (GPU 0; 47.53 GiB total capacity; 1.20 GiB already allocated; 7.05 GiB free; 1.47 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 27.35it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmph0kqau5z.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  33
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_100e
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.36it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.36it/s]
+
+loading complexes:   0%|          | 0/33 [00:00<?, ?it/s]
+loading complexes:   6%|▌         | 2/33 [00:00<00:02, 13.60it/s]
+loading complexes:  12%|█▏        | 4/33 [00:00<00:02, 12.44it/s]
+loading complexes:  18%|█▊        | 6/33 [00:00<00:02, 11.83it/s]
+loading complexes:  24%|██▍       | 8/33 [00:00<00:02, 10.60it/s]
+loading complexes:  30%|███       | 10/33 [00:00<00:02, 10.27it/s]
+loading complexes:  36%|███▋      | 12/33 [00:01<00:01, 10.72it/s]
+loading complexes:  42%|████▏     | 14/33 [00:01<00:01, 11.70it/s]
+loading complexes:  48%|████▊     | 16/33 [00:01<00:01, 13.14it/s]
+loading complexes:  55%|█████▍    | 18/33 [00:01<00:01, 13.68it/s]
+loading complexes:  61%|██████    | 20/33 [00:01<00:00, 13.93it/s]
+loading complexes:  67%|██████▋   | 22/33 [00:01<00:00, 14.09it/s]
+loading complexes:  73%|███████▎  | 24/33 [00:01<00:00, 13.73it/s]
+loading complexes:  79%|███████▉  | 26/33 [00:02<00:00, 12.40it/s]
+loading complexes:  85%|████████▍ | 28/33 [00:02<00:00, 11.66it/s]
+loading complexes:  91%|█████████ | 30/33 [00:02<00:00, 11.39it/s]
+loading complexes:  97%|█████████▋| 32/33 [00:02<00:00, 10.70it/s]
+loading complexes: 100%|██████████| 33/33 [00:02<00:00, 11.90it/s]
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 24.09it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmpmz2ucyoa.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  33
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_100e
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.36it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.36it/s]
+
+loading complexes:   0%|          | 0/33 [00:00<?, ?it/s]
+loading complexes:   6%|▌         | 2/33 [00:00<00:02, 13.53it/s]
+loading complexes:  12%|█▏        | 4/33 [00:00<00:01, 15.68it/s]
+loading complexes:  18%|█▊        | 6/33 [00:00<00:01, 16.40it/s]
+loading complexes:  24%|██▍       | 8/33 [00:00<00:01, 14.29it/s]
+loading complexes:  30%|███       | 10/33 [00:00<00:01, 12.97it/s]
+loading complexes:  36%|███▋      | 12/33 [00:01<00:02,  9.55it/s]
+loading complexes:  45%|████▌     | 15/33 [00:01<00:01, 10.73it/s]
+loading complexes:  52%|█████▏    | 17/33 [00:01<00:01, 10.31it/s]
+loading complexes:  58%|█████▊    | 19/33 [00:01<00:01, 10.50it/s]
+loading complexes:  67%|██████▋   | 22/33 [00:01<00:00, 13.59it/s]
+loading complexes:  73%|███████▎  | 24/33 [00:01<00:00, 12.92it/s]
+loading complexes:  79%|███████▉  | 26/33 [00:02<00:00, 12.82it/s]
+loading complexes:  85%|████████▍ | 28/33 [00:02<00:00, 11.67it/s]
+loading complexes:  91%|█████████ | 30/33 [00:02<00:00, 11.29it/s]
+loading complexes:  97%|█████████▋| 32/33 [00:02<00:00, 11.04it/s]
+loading complexes: 100%|██████████| 33/33 [00:02<00:00, 11.87it/s]
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 29.83it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmph0cmvqcp.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  32
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_100e
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.39it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.39it/s]
+
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]
+loading complexes:   6%|▋         | 2/32 [00:00<00:02, 11.58it/s]
+loading complexes:  12%|█▎        | 4/32 [00:00<00:02, 12.75it/s]
+loading complexes:  19%|█▉        | 6/32 [00:00<00:02, 12.94it/s]
+loading complexes:  25%|██▌       | 8/32 [00:00<00:02,  8.73it/s]
+loading complexes:  31%|███▏      | 10/32 [00:01<00:02,  8.59it/s]
+loading complexes:  34%|███▍      | 11/32 [00:01<00:02,  8.78it/s]
+loading complexes:  38%|███▊      | 12/32 [00:01<00:02,  8.97it/s]
+loading complexes:  41%|████      | 13/32 [00:01<00:02,  8.65it/s]
+loading complexes:  44%|████▍     | 14/32 [00:01<00:02,  8.31it/s]
+loading complexes:  47%|████▋     | 15/32 [00:01<00:02,  7.41it/s]
+loading complexes:  53%|█████▎    | 17/32 [00:01<00:01,  8.31it/s]
+loading complexes:  59%|█████▉    | 19/32 [00:02<00:01,  9.80it/s]
+loading complexes:  62%|██████▎   | 20/32 [00:02<00:01,  9.39it/s]
+loading complexes:  66%|██████▌   | 21/32 [00:02<00:01,  8.15it/s]
+loading complexes:  75%|███████▌  | 24/32 [00:02<00:00, 12.14it/s]
+loading complexes:  81%|████████▏ | 26/32 [00:02<00:00, 11.55it/s]
+loading complexes:  88%|████████▊ | 28/32 [00:02<00:00, 13.14it/s]
+loading complexes:  94%|█████████▍| 30/32 [00:03<00:00, 10.83it/s]
+loading complexes: 100%|██████████| 32/32 [00:03<00:00, 11.20it/s]
+loading complexes: 100%|██████████| 32/32 [00:03<00:00, 10.03it/s]
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 27.63it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmpyiszlpxu.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  32
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_100e
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.28it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.28it/s]
+
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]
+loading complexes:   3%|▎         | 1/32 [00:00<00:03,  9.66it/s]
+loading complexes:  12%|█▎        | 4/32 [00:00<00:01, 19.27it/s]
+loading complexes:  19%|█▉        | 6/32 [00:00<00:02, 11.79it/s]
+loading complexes:  25%|██▌       | 8/32 [00:00<00:02, 11.78it/s]
+loading complexes:  31%|███▏      | 10/32 [00:00<00:02,  9.29it/s]
+loading complexes:  38%|███▊      | 12/32 [00:01<00:01, 10.59it/s]
+loading complexes:  44%|████▍     | 14/32 [00:01<00:01, 12.33it/s]
+loading complexes:  50%|█████     | 16/32 [00:01<00:01, 12.20it/s]
+loading complexes:  56%|█████▋    | 18/32 [00:01<00:01, 10.35it/s]
+loading complexes:  62%|██████▎   | 20/32 [00:01<00:01,  9.92it/s]
+loading complexes:  69%|██████▉   | 22/32 [00:02<00:00, 10.17it/s]
+loading complexes:  75%|███████▌  | 24/32 [00:02<00:00, 10.56it/s]
+loading complexes:  81%|████████▏ | 26/32 [00:02<00:00, 11.37it/s]
+loading complexes:  88%|████████▊ | 28/32 [00:02<00:00, 11.44it/s]
+loading complexes:  94%|█████████▍| 30/32 [00:02<00:00,  9.72it/s]
+loading complexes: 100%|██████████| 32/32 [00:02<00:00, 10.61it/s]
+loading complexes: 100%|██████████| 32/32 [00:02<00:00, 10.90it/s]
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 28.90it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmpfy8nfip0.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  33
+Failed for 0 complexes
+Skipped 0 complexes
+Results are in result_folder/main_db_42_100e
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.35it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.35it/s]
+
+loading complexes:   0%|          | 0/33 [00:00<?, ?it/s]
+loading complexes:   3%|▎         | 1/33 [00:00<00:14,  2.14it/s]
+loading complexes:   9%|▉         | 3/33 [00:00<00:07,  4.11it/s]
+loading complexes:  15%|█▌        | 5/33 [00:01<00:06,  4.39it/s]
+loading complexes:  24%|██▍       | 8/33 [00:01<00:03,  6.32it/s]
+loading complexes:  27%|██▋       | 9/33 [00:01<00:03,  6.16it/s]
+loading complexes:  33%|███▎      | 11/33 [00:01<00:02,  7.92it/s]
+loading complexes:  39%|███▉      | 13/33 [00:02<00:02,  7.23it/s]
+loading complexes:  45%|████▌     | 15/33 [00:02<00:02,  7.86it/s]
+loading complexes:  48%|████▊     | 16/33 [00:02<00:02,  7.68it/s]
+loading complexes:  52%|█████▏    | 17/33 [00:02<00:02,  7.56it/s]
+loading complexes:  55%|█████▍    | 18/33 [00:03<00:03,  3.76it/s]
+loading complexes:  58%|█████▊    | 19/33 [00:03<00:03,  4.09it/s]
+loading complexes:  61%|██████    | 20/33 [00:03<00:03,  3.82it/s]
+loading complexes:  67%|██████▋   | 22/33 [00:03<00:02,  5.39it/s]
+loading complexes:  70%|██████▉   | 23/33 [00:04<00:01,  5.64it/s]
+loading complexes:  73%|███████▎  | 24/33 [00:04<00:02,  4.48it/s]
+loading complexes:  79%|███████▉  | 26/33 [00:04<00:01,  6.02it/s]
+loading complexes:  82%|████████▏ | 27/33 [00:04<00:00,  6.44it/s]
+loading complexes:  88%|████████▊ | 29/33 [00:05<00:00,  6.08it/s]
+loading complexes:  94%|█████████▍| 31/33 [00:05<00:00,  6.85it/s]
+loading complexes: 100%|██████████| 33/33 [00:05<00:00,  6.07it/s]
+
+
+stErrrs1:
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00, 27.43it/s]
+
+
+stdout2:
+hub dir /mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/esm_models
+Transferred model to GPU
+Read /tmp/tmpf9bdc1t9.fasta with 1 sequences
+Processing 1 of 1 batches (1 sequences)
+
+
+stdout3:
+cuda
+Reading molecules
+Reading language model embeddings.
+Generating graphs for ligands and proteins
+common t schedule [1.   0.95 0.9  0.85 0.8  0.75 0.7  0.65 0.6  0.55 0.5  0.45 0.4  0.35
+ 0.3  0.25 0.2  0.15 0.1  0.05]
+Size of test dataset:  32
+
+
+stErrrs3:
+
+parse receptor:   0%|          | 0/1 [00:00<?, ?it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.29it/s]
+parse receptor: 100%|██████████| 1/1 [00:00<00:00,  2.29it/s]
+
+loading complexes:   0%|          | 0/32 [00:00<?, ?it/s]
+loading complexes:   3%|▎         | 1/32 [00:00<00:06,  4.97it/s]
+loading complexes:   9%|▉         | 3/32 [00:00<00:04,  6.25it/s]
+loading complexes:  12%|█▎        | 4/32 [00:00<00:03,  7.04it/s]
+loading complexes:  16%|█▌        | 5/32 [00:00<00:03,  7.31it/s]
+loading complexes:  19%|█▉        | 6/32 [00:00<00:04,  6.13it/s]
+loading complexes:  22%|██▏       | 7/32 [00:01<00:04,  5.57it/s]
+loading complexes:  25%|██▌       | 8/32 [00:01<00:04,  5.70it/s]
+loading complexes:  31%|███▏      | 10/32 [00:01<00:02,  7.47it/s]
+loading complexes:  38%|███▊      | 12/32 [00:01<00:02,  6.96it/s]
+loading complexes:  44%|████▍     | 14/32 [00:02<00:02,  7.60it/s]
+loading complexes:  47%|████▋     | 15/32 [00:02<00:02,  7.44it/s]
+loading complexes:  53%|█████▎    | 17/32 [00:02<00:01,  8.41it/s]
+loading complexes:  59%|█████▉    | 19/32 [00:02<00:01,  8.30it/s]
+loading complexes:  62%|██████▎   | 20/32 [00:02<00:01,  8.30it/s]
+loading complexes:  66%|██████▌   | 21/32 [00:03<00:01,  6.53it/s]
+loading complexes:  69%|██████▉   | 22/32 [00:03<00:01,  6.50it/s]
+loading complexes:  72%|███████▏  | 23/32 [00:03<00:01,  6.23it/s]
+loading complexes:  75%|███████▌  | 24/32 [00:03<00:01,  6.86it/s]
+loading complexes:  81%|████████▏ | 26/32 [00:03<00:00,  7.95it/s]
+loading complexes:  88%|████████▊ | 28/32 [00:03<00:00,  7.96it/s]
+loading complexes:  91%|█████████ | 29/32 [00:04<00:00,  8.19it/s]
+loading complexes:  94%|█████████▍| 30/32 [00:04<00:00,  7.73it/s]
+loading complexes:  97%|█████████▋| 31/32 [00:04<00:00,  8.08it/s]
+loading complexes: 100%|██████████| 32/32 [00:04<00:00,  7.42it/s]
+Traceback (most recent call last):
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/screening_airi.py", line 213, in <module>
+    outputs = sampling(data_list=batch,
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/datasets/utils/sampling.py", line 129, in sampling
+    lddt_pred, affinity_pred, tr_score, rot_score, tor_score, res_tr_score, res_rot_score, res_chi_score = model(complex_graph_batch)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/models/score_model.py", line 307, in forward
+    lig_inter_update = self.rec_to_lig_conv_layers[l](torch.cat([rec_node_attr,n_norm_vec,c_norm_vec],dim=-1), cross_edge_index, rec_to_lig_edge_attr_, cross_edge_sh,
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/tank/scratch/okonovalova/freedpp/freedpp/FREEDPP-dynamicbind/ffreed/env/models/score_model.py", line 82, in forward
+    tp = self.tp(node_attr[edge_dst], edge_sh, self.fc(edge_attr))
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/nfs/home/okonovalova/anaconda3/envs/dynamicbind/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 7.91 GiB (GPU 0; 47.53 GiB total capacity; 1.21 GiB already allocated; 6.97 GiB free; 1.55 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
